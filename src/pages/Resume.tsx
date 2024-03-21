@@ -1,8 +1,8 @@
 const Resume: React.FC = () => {
   return (
-    <div>
+    <section className='max-w-5xl w-full'>
       <h1>Resume</h1>
-    </div>
+    </section>
   )
 }
 
