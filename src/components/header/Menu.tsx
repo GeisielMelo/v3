@@ -12,7 +12,7 @@ export const Menu: React.FC = () => {
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant='outline' className='md:hidden'>
+        <Button variant='outline' className='md:hidden dark:bg-transparent'>
           <HamburgerMenuIcon />
         </Button>
       </SheetTrigger>
