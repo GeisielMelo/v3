@@ -1,18 +1,16 @@
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { HamburgerMenuIcon, MoonIcon, SunIcon } from '@radix-ui/react-icons'
-import { css } from './index'
+import { HeaderProps, css } from './index'
 import { useNavigate } from 'react-router-dom'
-import { useDarkMode } from '@/hooks/useDarkMode'
 
-export const Menu: React.FC = () => {
-  const { isDarkMode, setDarkMode } = useDarkMode()
+export const Menu: React.FC<HeaderProps> = ({ isDarkMode, setDarkMode }) => {
   const navigate = useNavigate()
 
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant='outline' className='md:hidden dark:bg-transparent'>
+        <Button variant='outline' className='lg:hidden dark:bg-transparent'>
           <HamburgerMenuIcon />
         </Button>
       </SheetTrigger>

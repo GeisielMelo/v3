@@ -1,9 +1,8 @@
-import { useDarkMode } from '@/hooks/useDarkMode'
-import { ChatBubbleIcon, GitHubLogoIcon, LinkedInLogoIcon, MoonIcon, SunIcon } from '@radix-ui/react-icons'
+import { ChatBubbleIcon, GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
 import { Button } from '../ui/button'
+import { LanguagesIcon } from 'lucide-react'
 
 const Index: React.FC = () => {
-  const { isDarkMode, setDarkMode } = useDarkMode()
   return (
     <footer className='mt-auto font-inter text-sm'>
       <div className='flex flex-wrap items-center justify-center gap-2'>
@@ -28,12 +27,11 @@ const Index: React.FC = () => {
         </div>
         <div className='flex gap-2 lg:fixed bottom-0 right-8 lg:flex-col lg:items-center'>
           <Button
-            className='dark:bg-transparent dark:hover:text-custom-green transition-all'
+            className='dark:text-white dark:bg-transparent dark:hover:text-custom-green transition-all cursor-not-allowed'
             variant='ghost'
             size='sm'
-            onClick={() => setDarkMode(!isDarkMode)}
           >
-            {isDarkMode ? <SunIcon /> : <MoonIcon />}
+            <LanguagesIcon className='w-4 h-4' />
           </Button>
           <Button
             className='dark:bg-transparent dark:hover:text-custom-green transition-all'
