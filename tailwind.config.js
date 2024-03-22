@@ -16,9 +16,14 @@ module.exports = {
         Lexend: ['Lexend', 'sans-serif'],
         Inter: ['Inter', 'sans-serif'],
       },
+      boxShadow: {
+        'light-shadow': '0 10px 30px -15px rgba(2, 12, 27, 0.7)',
+      },
       colors: {
         'custom-green': '#64ffda',
         'custom-navy' : '#0a192f',
+        'custom-navy-light' : '#112240',
+        'custom-navy-shadow' : 'rgba(2, 12, 27, 0.7)',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
