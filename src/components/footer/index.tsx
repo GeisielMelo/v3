@@ -1,6 +1,5 @@
-import { ChatBubbleIcon, GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
+import { ChatBubbleIcon, EnvelopeClosedIcon, GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
 import { Button } from '../ui/button'
-import { LanguagesIcon } from 'lucide-react'
 
 const Index: React.FC = () => {
   return (
@@ -27,11 +26,12 @@ const Index: React.FC = () => {
         </div>
         <div className='flex gap-2 lg:fixed bottom-0 right-8 lg:flex-col lg:items-center'>
           <Button
-            className='dark:text-white dark:bg-transparent dark:hover:text-custom-green transition-all cursor-not-allowed'
+            className='dark:text-white dark:bg-transparent dark:hover:text-custom-green transition-all cursor-pointer'
             variant='ghost'
             size='sm'
+            onClick={() => window.open('mailto:geisiel.nascimento@gmail.com')}
           >
-            <LanguagesIcon className='w-4 h-4' />
+            <EnvelopeClosedIcon className='w-4 h-4' />
           </Button>
           <Button
             className='dark:bg-transparent dark:hover:text-custom-green transition-all'
