@@ -38,7 +38,11 @@ const Index: React.FC<HeaderProps> = ({ isDarkMode, setDarkMode }) => {
           Resume
         </li>
       </ul>
-      <Button variant='ghost' className='hidden lg:block transition-all dark:hover:text-custom-green dark:hover:bg-slate-800/30' onClick={() => setDarkMode(!isDarkMode)}>
+      <Button
+        variant='ghost'
+        className='hidden lg:block transition-all dark:hover:text-custom-green dark:hover:bg-slate-800/30'
+        onClick={() => setDarkMode(!isDarkMode)}
+      >
         {isDarkMode ? <SunIcon /> : <MoonIcon />}
       </Button>
       <Menu isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
