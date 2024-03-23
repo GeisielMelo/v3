@@ -1,6 +1,5 @@
 import { Card } from '@/components/resume/Card'
-import { Button } from '@/components/ui/button'
-import { DownloadIcon } from '@radix-ui/react-icons'
+import DownloadResume from '@/components/resume/DownloadResume'
 
 const data = [
   {
@@ -29,12 +28,7 @@ const Resume: React.FC = () => {
         <Card data={element} key={key} />
       ))}
       <div className='flex justify-center'>
-        <Button
-          className='cursor-pointer transition-all dark:hover:text-custom-green dark:hover:bg-slate-800/30'
-          variant='ghost'
-        >
-          <DownloadIcon />
-        </Button>
+        <DownloadResume />
       </div>
     </section>
   )
