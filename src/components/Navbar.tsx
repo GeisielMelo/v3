@@ -1,7 +1,7 @@
 import { MoonIcon, SunIcon } from '@radix-ui/react-icons'
 import { Button } from '@/components/ui/button'
 import { useNavigate } from 'react-router-dom'
-import { Menu } from './Menu'
+import { NavbarAside } from './NavbarAside'
 
 export type HeaderProps = {
   isDarkMode: boolean
@@ -12,7 +12,7 @@ export const css = {
   option: `font-Lexend inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-transparent hover:text-accent-foreground h-10 px-4 py-2 cursor-pointer w-28 text-md text-slate-500`,
 }
 
-const Index: React.FC<HeaderProps> = ({ isDarkMode, setDarkMode }) => {
+const Navbar: React.FC<HeaderProps> = ({ isDarkMode, setDarkMode }) => {
   const pathname = window.location.pathname
   const navigate = useNavigate()
   const selected =
@@ -45,9 +45,9 @@ const Index: React.FC<HeaderProps> = ({ isDarkMode, setDarkMode }) => {
       >
         {isDarkMode ? <SunIcon /> : <MoonIcon />}
       </Button>
-      <Menu isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
+      <NavbarAside isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
     </header>
   )
 }
 
-export default Index
+export default Navbar

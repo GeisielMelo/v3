@@ -1,10 +1,10 @@
 import { Button } from '@/components/ui/button'
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from '@/components/ui/sheet'
 import { HamburgerMenuIcon, MoonIcon, SunIcon } from '@radix-ui/react-icons'
-import { HeaderProps, css } from './index'
+import { HeaderProps, css } from './Navbar'
 import { useNavigate } from 'react-router-dom'
 
-export const Menu: React.FC<HeaderProps> = ({ isDarkMode, setDarkMode }) => {
+export const NavbarAside: React.FC<HeaderProps> = ({ isDarkMode, setDarkMode }) => {
   const navigate = useNavigate()
 
   return (

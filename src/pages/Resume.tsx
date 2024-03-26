@@ -1,20 +1,22 @@
-import { Card } from '@/components/resume/Card'
-import DownloadResume from '@/components/resume/DownloadResume'
+import { Worked } from '@/components/Worked'
+import Download from '@/components/Download'
 
 const data = [
   {
-    title: 'Frontend Developer',
-    period: 'Out 2020 — Fev 2022',
-    locale: 'Brazil',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
-    technologies: ['React', 'TypeScript', 'TailwindCSS'],
+    title: 'Freelance Web Developer',
+    period: 'Ago 2022 — Present',
+    locale: 'Remote - Brazil',
+    description:
+      'Working as a full-stack developer, I have been involved in the complete development cycle of applications, from planning to launch, using the MERN and TS tech stack. I developed APIs and interfaces, prioritizing user experience and applying best programming practices, including version control with Git.',
+    technologies: ['MongoDB', 'Express', 'React', 'Node', 'TypeScript', 'TailwindCSS'],
   },
   {
-    title: 'Backend Developer',
-    period: 'Out 2022 — Fev 2024',
-    locale: 'USA',
-    description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.',
-    technologies: ['Angular', 'TypeScript', 'TailwindCSS'],
+    title: 'E-Commerce',
+    period: 'Jan 2020 — Mar 2022',
+    locale: 'Remote - Brazil',
+    description:
+      'I worked on brand development and identity creation, efficient traffic management, customer relations, creating a user-friendly environment, and made direct contributions to design and data analysis',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
   },
 ]
 
@@ -25,10 +27,10 @@ const Resume: React.FC = () => {
         Where I’ve Worked
       </h1>
       {data.map((element, key) => (
-        <Card data={element} key={key} />
+        <Worked data={element} key={key} />
       ))}
       <div className='flex justify-center'>
-        <DownloadResume />
+        <Download />
       </div>
     </section>
   )

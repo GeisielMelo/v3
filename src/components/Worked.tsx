@@ -10,7 +10,7 @@ type CardProps = {
   }
 }
 
-export const Card: React.FC<CardProps> = ({ data }) => {
+export const Worked: React.FC<CardProps> = ({ data }) => {
   const [openCard, setOpenCad] = useState(false)
 
   return (

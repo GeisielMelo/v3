@@ -1,7 +1,7 @@
 import { ChatBubbleIcon, EnvelopeClosedIcon, GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
-import { Button } from '../ui/button'
+import { Button } from './ui/button'
 
-const Index: React.FC = () => {
+const Footer: React.FC = () => {
   return (
     <footer className='mt-auto font-inter text-sm'>
       <div className='flex flex-wrap items-center justify-center gap-2'>
@@ -59,4 +59,4 @@ const Index: React.FC = () => {
   )
 }
 
-export default Index
+export default Footer

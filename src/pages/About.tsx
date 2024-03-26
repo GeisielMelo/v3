@@ -1,9 +1,52 @@
 const About: React.FC = () => {
+  const technologies: string[] = [
+    'JavaScript (ES6+)',
+    'TypeScript',
+    'Python',
+    'Express',
+    'Tailwind CSS',
+    'React',
+    'Node.js',
+    'Styled Components',
+    'MongoDB',
+    'Firebase',
+    'MySQL',
+    'Jest',
+    'Redis',
+    'Git',
+    'HTML',
+    'CSS',
+    'Cypress',
+    'Docker',
+    'ASP.NET Core 8',
+    'C#',
+  ]
+
   return (
-    <section className='py-28 max-w-5xl w-full'>
+    <section className='max-w-5xl w-full lg:pr-36 font-Inter py-24 text-slate-500'>
       <h1 className='font-Inter text-[clamp(20px,4vw,25px)] leading-none font-semibold tracking-tighter text-accent-foreground'>
         About
       </h1>
+      <div className='flex flex-col gap-2 my-6'>
+        <p>
+          My interest in <span className='font-bold dark:font-normal dark:text-custom-green'>web development</span>{' '}
+          began in 2020 when I worked in the digital market building and editing landing pages to sell products online.
+          This experience taught me a lot about HTML and CSS and was enough to spark my curiosity and drive me to
+          explore development further.
+        </p>
+        <p>
+          In nowadays im <span className='font-bold dark:font-normal dark:text-custom-green'>looking for a job</span>{' '}
+          where i can utilize my skills and knowledge to build useful and functional applications.
+        </p>
+        <p>Here are a few technologies that I've been using recently!</p>
+        <ul className='grid  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4'>
+          {technologies.map((technology, key) => (
+            <li key={key} className="before:content-['▹'] before:dark:text-custom-green before:text-black before:pr-2 font-Lexend text-sm">
+              {technology}
+            </li>
+          ))}
+        </ul>
+      </div>
     </section>
   )
 }

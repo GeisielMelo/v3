@@ -1,7 +1,7 @@
 import { DownloadIcon } from '@radix-ui/react-icons'
-import { Button } from '../ui/button'
+import { Button } from './ui/button'
 
-const DownloadResume = () => {
+const Download:React.FC = () => {
   const handleDownload = async () => {
     try {
       const response = await fetch('static/resume.pdf')
@@ -32,4 +32,4 @@ const DownloadResume = () => {
   )
 }
 
-export default DownloadResume
+export default Download
