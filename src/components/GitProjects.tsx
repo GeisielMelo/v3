@@ -1,6 +1,7 @@
 import { ExternalLinkIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
 import { Button } from '@/components/ui/button'
 import gitRepos from '../assets/json/gitRepos.json'
+import { useState } from 'react'
 
 type IData = {
   name: string
@@ -12,6 +13,12 @@ type IData = {
 
 export const GitProjects: React.FC = () => {
   const data: IData[] = gitRepos
+  const [maxCards, setMaxCards] = useState(6)
+
+  const handleSetCardsNumber = () => {
+    if (maxCards >= data.length) setMaxCards(6)
+    else setMaxCards(maxCards + 3)
+  }
 
   return (
     <>
@@ -19,7 +26,7 @@ export const GitProjects: React.FC = () => {
         Take a look at my personal Git projects.
       </h2>
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
-        {data.map((project, index) => (
+        {data.slice(0, maxCards).map((project, index) => (
           <div
             key={index}
             className='flex flex-col p-6 gap-8 font-Lexend md:flex rounded-md shadow-md transition-all bg-slate-200/50 dark:bg-custom-navy-light/60 hover:shadow-black/50 dark:hover:shadow-custom-green/50'
@@ -62,6 +69,15 @@ export const GitProjects: React.FC = () => {
             </ul>
           </div>
         ))}
+      </div>
+      <div className='flex justify-center font-Inter'>
+        <Button
+          className='px-6 py-4 mt-12 border cursor-pointer transition-all dark:border-white border-slate-800/30 dark:hover:text-custom-green dark:hover:bg-slate-800/30 dark:hover:border-custom-green'
+          variant='ghost'
+          onClick={() => handleSetCardsNumber()}
+        >
+          {maxCards >= data.length ? 'Hide!' : 'More!'}
+        </Button>
       </div>
     </>
   )
