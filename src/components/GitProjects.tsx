@@ -1,6 +1,6 @@
 import { ExternalLinkIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
 import { Button } from '@/components/ui/button'
-import rawData from '../assets/json/data.json'
+import gitRepos from '../assets/json/gitRepos.json'
 
 type IData = {
   name: string
@@ -11,7 +11,7 @@ type IData = {
 }
 
 export const GitProjects: React.FC = () => {
-  const data: IData[] = rawData
+  const data: IData[] = gitRepos
 
   return (
     <>

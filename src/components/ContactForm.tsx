@@ -1,4 +1,5 @@
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
+import { CheckIcon, PaperPlaneIcon, UpdateIcon } from '@radix-ui/react-icons'
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
@@ -6,7 +7,6 @@ import { useForm } from 'react-hook-form'
 import { Textarea } from './ui/textarea'
 import { useState } from 'react'
 import { z } from 'zod'
-import { CheckIcon, PaperPlaneIcon, UpdateIcon } from '@radix-ui/react-icons'
 import emailjs from '@emailjs/browser'
 
 const formSchema = z.object({
@@ -56,16 +56,6 @@ export const ContactForm: React.FC = () => {
     }
   }
 
-  const handleLastContact = () => {
-    const lastContactTimestamp = localStorage.getItem('lastContact')
-    if (lastContactTimestamp) {
-      const lastContact = parseInt(lastContactTimestamp)
-      const evalTimestamp = lastContact + 12 * 60 * 60 * 1000
-      if (evalTimestamp >= lastContact) return true
-    }
-    return false
-  }
-
   return (
     <Form {...form}>
       <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8 max-w-xl'>
@@ -80,7 +70,6 @@ export const ContactForm: React.FC = () => {
                   className='dark:border-slate-800'
                   placeholder='Your name or company name'
                   type='text'
-                  disabled={handleLastContact()}
                   {...field}
                 />
               </FormControl>
@@ -96,13 +85,7 @@ export const ContactForm: React.FC = () => {
             <FormItem>
               <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input
-                  className='dark:border-slate-800'
-                  placeholder='Your best email'
-                  type='email'
-                  disabled={handleLastContact()}
-                  {...field}
-                />
+                <Input className='dark:border-slate-800' placeholder='Your best email' type='email' {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -116,13 +99,7 @@ export const ContactForm: React.FC = () => {
             <FormItem>
               <FormLabel>Message</FormLabel>
               <FormControl>
-                <Textarea
-                  className='dark:border-slate-800'
-                  rows={4}
-                  placeholder='Your message'
-                  disabled={handleLastContact()}
-                  {...field}
-                />
+                <Textarea className='dark:border-slate-800' rows={4} placeholder='Your message' {...field} />
               </FormControl>
               <FormMessage />
             </FormItem>
@@ -130,14 +107,8 @@ export const ContactForm: React.FC = () => {
         />
 
         {error && <FormMessage>{error}</FormMessage>}
-        <Button disabled={loading || success || handleLastContact()} type='submit'>
-          {success || handleLastContact() ? (
-            <CheckIcon />
-          ) : loading ? (
-            <UpdateIcon className='animate-spin' />
-          ) : (
-            <PaperPlaneIcon />
-          )}
+        <Button disabled={loading || success} type='submit'>
+          {success ? <CheckIcon /> : loading ? <UpdateIcon className='animate-spin' /> : <PaperPlaneIcon />}
         </Button>
       </form>
     </Form>
