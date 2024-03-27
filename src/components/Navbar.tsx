@@ -9,7 +9,7 @@ export type HeaderProps = {
 }
 
 export const css = {
-  option: `font-Lexend inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 hover:bg-transparent hover:text-accent-foreground h-10 px-4 py-2 cursor-pointer w-28 text-md text-slate-500`,
+  option: `font-Lexend inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:hover:bg-transparent hover:text-accent-foreground h-10 px-4 py-2 cursor-pointer w-28 text-md text-slate-500`,
 }
 
 const Navbar: React.FC<HeaderProps> = ({ isDarkMode, setDarkMode }) => {
@@ -19,7 +19,7 @@ const Navbar: React.FC<HeaderProps> = ({ isDarkMode, setDarkMode }) => {
     'bg-accent text-accent-foreground dark:bg-transparent dark:rounded-none dark:border-b dark:border-custom-green dark:text-custom-green'
 
   return (
-    <header className='z-20 py-4 gap-9 px-6 flex justify-between items-center sticky top-0 backdrop-blur-sm border-b'>
+    <header className='z-20 py-4 gap-9 px-6 flex justify-between items-center sticky top-0 backdrop-blur-md dark:backdrop-blur-sm border-b'>
       <h1 className='text-2xl font-bold flex items-center justify-center h-11 w-11 rounded-full'>G</h1>
       <ul className='hidden lg:flex max-w-5xl w-full gap-2'>
         <li className={`${css.option} + ${pathname == '/' && selected}`} onClick={() => navigate('/')}>
