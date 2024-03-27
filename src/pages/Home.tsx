@@ -4,7 +4,7 @@ const Home: React.FC = () => {
   const navigate = useNavigate()
 
   return (
-    <section className='max-w-5xl w-full lg:pr-36 font-Inter py-24 text-slate-500'>
+    <section className='max-w-5xl w-full lg:pr-36 font-Inter py-10 text-slate-500'>
       <h1 className='mb-1 md:mb-4'>Hi, my name is</h1>
       <h2 className='text-[clamp(20px,6vw,60px)] font-Lexend leading-none font-semibold tracking-tighter text-accent-foreground'>
         Geisiel Melo.

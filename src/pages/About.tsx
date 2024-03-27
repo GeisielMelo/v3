@@ -2,7 +2,7 @@ import data from '../assets/json/technologies.json'
 
 const About: React.FC = () => {
   return (
-    <section className='max-w-5xl w-full lg:pr-36 font-Inter py-24 text-slate-500'>
+    <section className='max-w-5xl w-full lg:pr-36 font-Inter py-10 text-slate-500'>
       <h1 className='font-Inter text-[clamp(20px,4vw,25px)] leading-none font-semibold tracking-tighter text-accent-foreground'>
         About
       </h1>

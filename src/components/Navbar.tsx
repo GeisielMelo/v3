@@ -20,7 +20,7 @@ const Navbar: React.FC<HeaderProps> = ({ isDarkMode, setDarkMode }) => {
 
   return (
     <header className='z-20 py-4 gap-9 px-6 flex justify-between items-center sticky top-0 backdrop-blur-md dark:backdrop-blur-sm border-b'>
-      <h1 className='text-2xl font-bold flex items-center justify-center h-11 w-11 rounded-full'>G</h1>
+      <h1 className='font-Inter text-2xl font-bold flex items-center justify-center h-11 w-11 rounded-full'>G</h1>
       <ul className='hidden lg:flex max-w-5xl w-full gap-2'>
         <li className={`${css.option} + ${pathname == '/' && selected}`} onClick={() => navigate('/')}>
           Home

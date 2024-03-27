@@ -15,10 +15,10 @@ export const Worked: React.FC<CardProps> = ({ data }) => {
 
   return (
     <div
-      className='font-Lexend block md:flex gap-0 md:gap-8 w-full px-0 md:px-6 py-6 my-6 rounded-md shadow-md dark:shadow-light-shadow transition-all bg-slate-200/50 dark:bg-custom-navy-light/60 cursor-pointer'
+      className='font-Lexend block md:flex gap-0 md:gap-8 w-full px-6 py-6 my-6 rounded-md shadow-md dark:shadow-light-shadow transition-all bg-slate-200/50 dark:bg-custom-navy-light/60 cursor-pointer'
       onClick={() => setOpenCad(!openCard)}
     >
-      <h1 className='whitespace-nowrap text-slate-500 font-Inter text-sm'>{data.period}</h1>
+      <h1 className='text-slate-500 font-Inter text-sm'>{data.period}</h1>
 
       <div className='w-full'>
         <h1>{data.title}</h1>

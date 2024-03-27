@@ -2,7 +2,7 @@ import { ContactForm } from '@/components/ContactForm'
 
 const Contact: React.FC = () => {
   return (
-    <section className='font-Inter py-28 max-w-5xl w-full'>
+    <section className='font-Inter py-10 max-w-5xl w-full'>
       <h1 className='text-[clamp(20px,4vw,25px)] leading-none font-semibold tracking-tighter text-accent-foreground'>
         Get In Touch
       </h1>
