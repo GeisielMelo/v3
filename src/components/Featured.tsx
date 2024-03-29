@@ -1,6 +1,7 @@
 import { GitHubLogoIcon } from '@radix-ui/react-icons'
 import featuredJson from '../assets/json/featured.json'
 import { Button } from './ui/button'
+import { useState } from 'react'
 
 type FeaturedProps = {
   title: string
@@ -9,6 +10,24 @@ type FeaturedProps = {
   git: string
   live: string
   technologies: string[]
+}
+
+const ImageLoader: React.FC<{ element: FeaturedProps }> = ({ element }) => {
+  const [imageLoaded, setImageLoaded] = useState(false)
+
+  return (
+    <>
+      <img
+        className='rounded-t-lg cursor-pointer object-cover aspect-video'
+        src={element.image}
+        alt={`${element.title} preview image.`}
+        onClick={() => window.open(element.live, '_blank')}
+        onLoad={() => setImageLoaded(true)}
+        style={{ display: imageLoaded ? 'block' : 'none' }}
+      />
+      {!imageLoaded && <div className='aspect-video animate-pulse bg-slate-500/60 rounded-t-lg' />}
+    </>
+  )
 }
 
 export const Featured: React.FC = () => {
@@ -28,13 +47,7 @@ export const Featured: React.FC = () => {
             className='rounded-xs rounded-md shadow-md transition-all bg-slate-200/50 dark:bg-custom-navy-light/60'
             key={key}
           >
-            <img
-              className='rounded-t-lg cursor-pointer object-cover'
-              src={element.image}
-              alt={`${element.title} preview image.`}
-              onClick={() => window.open(element.live, '_blank')}
-            />
-
+            <ImageLoader element={element} />
             <div className='flex flex-col p-4 relative'>
               <div className='flex items-center justify-between'>
                 <h1 className='font-Lexend text-md'>{element.title}</h1>
