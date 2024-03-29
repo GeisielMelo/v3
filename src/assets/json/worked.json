@@ -1,16 +1,25 @@
 [
   {
-    "title": "Freelance -  Web Developer",
-    "period": "Ago 2022 — Present",
+    "title": "Full-stack Developer",
+    "period": "Ago 2022 — Dez 2023",
     "locale": "Remote - Brazil",
-    "description": "Working as a full-stack developer, I have been involved in the complete development cycle of applications, from planning to launch, using the MERN and TS tech stack. I developed APIs and interfaces, prioritizing user experience and applying best programming practices, including version control with Git.",
+    "attributions": [
+      "Full-stack development of web applications using modern technologies such as MongoDB, Express, React, Node, and TypeScript.",
+      "Development of APIs and interfaces with a focus on user experience enhancement.",
+      "Implementation of robust programming practices, including version control with Git.",
+      "Active participation in all stages of application development cycle, from planning to launch."
+    ],
     "technologies": ["MongoDB", "Express", "React", "Node", "TypeScript", "TailwindCSS"]
   },
   {
     "title": "Front-end Developer",
     "period": "Jan 2020 — Mar 2022",
     "locale": "Loja TrapStar - Brazil",
-    "description": "I worked on brand development and identity creation, efficient traffic management, customer relations, creating a user-friendly environment, and made direct contributions to design and data analysis",
+    "attributions": [
+      "Developed, maintained, and deployed production code for client websites, primarily utilizing HTML, CSS, and JavaScript.",
+      "Collaborated  with the design team to promote a cohesive team environment and ensure consistent user experiences.",
+      "Performed quality tests to ensure cross browser compatibility, speed and responsiveness."
+    ],
     "technologies": ["HTML", "CSS", "JavaScript"]
   }
 ]
