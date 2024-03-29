@@ -21,9 +21,12 @@ export const GitProjects: React.FC = () => {
   }
 
   return (
-    <>
-      <h2 className='font-Inter leading-none tracking-tighter text-accent-foreground mb-8 dark:text-custom-green'>
-        Take a look at my personal Git projects.
+    <div>
+      <h1 className='text-center font-Inter text-[clamp(20px,4vw,25px)] leading-none font-semibold tracking-tighter text-accent-foreground mb-2 mt-20'>
+        My personal Git projects.
+      </h1>
+      <h2 className='text-center font-Inter leading-none tracking-tighter text-accent-foreground mb-8 dark:text-custom-green'>
+        Take a look
       </h2>
       <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4'>
         {data.slice(0, maxCards).map((project, index) => (
@@ -79,6 +82,6 @@ export const GitProjects: React.FC = () => {
           {maxCards >= data.length ? 'Hide!' : 'More!'}
         </Button>
       </div>
-    </>
+    </div>
   )
 }
