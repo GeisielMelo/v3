@@ -2,14 +2,14 @@
   <img alt="Logo" src="https://github.com/GeisielMelo/v3/blob/main/public/img/logo.png" width="50" />
 </div>
 <h1 align="center">
-  geisielmelo.vercel.app - v3
+  geisiel.com - v3
 </h1>
 <p align="center">
-  The third veresion of <a href="https://geisielmelo.vercel.app" target="_blank">geisielmelo.vercel.app</a> built with <a href="https://react.dev" target="_blank">React</a> and hosted with <a href="https://vercel.com" target="_blank">Vercel</a>
+  The third veresion of <a href="https://geisiel.com" target="_blank">geisiel.com</a> built with <a href="https://react.dev" target="_blank">React</a> and hosted with <a href="https://vercel.com" target="_blank">Vercel</a>
 </p>
 <p align="center">
   Previous iterations:
-  <a href="https://v2.geisielmelo.vercel.app/" target="_blank">v2</a>
+  <a href="https://v2.geisiel.com/" target="_blank">v2</a>
 </p>
 
 ![demo](https://raw.githubusercontent.com/GeisielMelo/v3/main/public/img/demo.png)
