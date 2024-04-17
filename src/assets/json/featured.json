@@ -2,7 +2,7 @@
   {
     "title": "Vacancies",
     "description": "Vacancies were created as an improved method for efficiently organizing your applications.",
-    "image": "https://img001.prntscr.com/file/img001/EhRG4g1ARQKH0EvxYxSRpg.png",
+    "image": "https://raw.githubusercontent.com/GeisielMelo/v3/main/public/img/vacancies.png",
     "git": "https://github.com/GeisielMelo/vacancies",
     "live": "https://vacancies-client.vercel.app/",
     "technologies": ["Express", "Mongodb", "Node", "React", "Tailwind CSS"]
@@ -10,7 +10,7 @@
   {
     "title": "TMDb",
     "description": "An app created in my free time with the aim of being a front-end-only application powered by data from TheMovieDB.",
-    "image": "https://raw.githubusercontent.com/GeisielMelo/TMDb/main/public/preview.png",
+    "image": "https://raw.githubusercontent.com/GeisielMelo/v3/main/public/img/tmdb.png",
     "git": "https://github.com/GeisielMelo/TMDb",
     "live": "https://tmdb.geisielmelo.vercel.app/",
     "technologies": ["Firebase", "Lucide", "React", "Swiper", "Tailwind CSS"]
@@ -18,7 +18,7 @@
   {
     "title": "Profile Visualizer",
     "description": "A more effective way to view user information through graphs and statistics.",
-    "image": "https://img001.prntscr.com/file/img001/sy5yRHkTS8OMPaUYQ4T2kg.png",
+    "image": "https://raw.githubusercontent.com/GeisielMelo/v3/main/public/img/profilevizualizer.png",
     "git": "https://github.com/GeisielMelo/Profile-visualizer",
     "live": "https://profile-visualizer.vercel.app/",
     "technologies": ["Node", "React", "Styled-Components", "Typescript"]
@@ -26,7 +26,7 @@
   {
     "title": "GNM-Chat",
     "description": "A complete chat platform where you can add contacts and send real-time messages, very simple to use and fully responsive.",
-    "image": "https://img001.prntscr.com/file/img001/XUDJ4vtVSQ-63QFJtvsdUA.png",
+    "image": "https://raw.githubusercontent.com/GeisielMelo/v3/main/public/img/gnmchat.png",
     "git": "https://github.com/GeisielMelo/GNM-Chat",
     "live": "https://gnm-chat.vercel.app/",
     "technologies": ["Firebase", "Lucide", "React", "Tailwind CSS"]

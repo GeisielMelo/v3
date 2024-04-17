@@ -1,7 +1,10 @@
+'use client'
+
 import { GitHubLogoIcon } from '@radix-ui/react-icons'
 import featuredJson from '../assets/json/featured.json'
 import { Button } from './ui/button'
 import { useState } from 'react'
+import Image from 'next/image'
 
 type FeaturedProps = {
   title: string
@@ -17,13 +20,16 @@ const ImageLoader: React.FC<{ element: FeaturedProps }> = ({ element }) => {
 
   return (
     <>
-      <img
+      <Image
         className='rounded-t-lg cursor-pointer object-cover aspect-video'
         src={element.image}
         alt={`${element.title} preview image.`}
         onClick={() => window.open(element.live, '_blank')}
         onLoad={() => setImageLoaded(true)}
-        style={{ display: imageLoaded ? 'block' : 'none' }}
+        sizes="100vw"
+        style={{ display: imageLoaded ? 'block' : 'none', width: '100%', height: 'auto'}}
+        width={500}
+        height={300}
       />
       {!imageLoaded && <div className='aspect-video animate-pulse bg-slate-500/60 rounded-t-lg' />}
     </>

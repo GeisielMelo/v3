@@ -1,6 +1,8 @@
+'use client'
+
 import { ExternalLinkIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
 import { Button } from '@/components/ui/button'
-import gitRepos from '../assets/json/gitRepos.json'
+import gitRepos from '@/assets/json/gitRepos.json'
 import { useState } from 'react'
 
 type IData = {

@@ -1,51 +1,37 @@
 import { ChatBubbleIcon, EnvelopeClosedIcon, GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
-import { Button } from './ui/button'
+
+const css = {
+  button:
+    'py-2 dark:bg-transparent dark:hover:text-custom-green transition-all hover:bg-accent hover:text-accent-foreground h-8 rounded-md px-3 text-xs',
+}
+
+const href = {
+  linkedIn: 'https://www.linkedin.com/in/geisiel',
+  gitHub: 'https://github.com/GeisielMelo',
+  email: 'mailto:geisiel.nascimento@gmail.com',
+  whatsApp: 'https://api.whatsapp.com/send?phone=5571981608087&text="Hello, I would like to speak to Geisiel."',
+}
 
 const Footer: React.FC = () => {
   return (
     <footer className='mt-auto font-inter text-sm'>
       <div className='flex flex-wrap items-center justify-center gap-2'>
         <div className='flex gap-2 lg:fixed bottom-0 left-8 lg:flex-col lg:items-center'>
-          <Button
-            className='dark:bg-transparent dark:hover:text-custom-green transition-all'
-            variant='ghost'
-            size='sm'
-            onClick={() => window.open('https://github.com/GeisielMelo', '_blank')}
-          >
+          <a className={css.button} target='_blank' href={href.gitHub} rel='noopener noreferrer'>
             <GitHubLogoIcon />
-          </Button>
-          <Button
-            className='dark:bg-transparent dark:hover:text-custom-green transition-all'
-            variant='ghost'
-            size='sm'
-            onClick={() => window.open('https://www.linkedin.com/in/geisiel', '_blank')}
-          >
+          </a>
+          <a className={css.button} target='_blank' href={href.linkedIn} rel='noopener noreferrer'>
             <LinkedInLogoIcon />
-          </Button>
+          </a>
           <div className='hidden h-36 w-[1px] lg:block bg-black dark:bg-white' />
         </div>
         <div className='flex gap-2 lg:fixed bottom-0 right-8 lg:flex-col lg:items-center'>
-          <Button
-            className='dark:text-white dark:bg-transparent dark:hover:text-custom-green transition-all cursor-pointer'
-            variant='ghost'
-            size='sm'
-            onClick={() => window.open('mailto:geisiel.nascimento@gmail.com')}
-          >
+          <a className={css.button} target='_blank' href={href.email} rel='noopener noreferrer'>
             <EnvelopeClosedIcon className='w-4 h-4' />
-          </Button>
-          <Button
-            className='dark:bg-transparent dark:hover:text-custom-green transition-all'
-            variant='ghost'
-            size='sm'
-            onClick={() =>
-              window.open(
-                'https://api.whatsapp.com/send?phone=5571981608087&text="Hello, I would like to speak to Geisiel."',
-                '_blank',
-              )
-            }
-          >
+          </a>
+          <a className={css.button} target='_blank' href={href.whatsApp} rel='noopener noreferrer'>
             <ChatBubbleIcon />
-          </Button>
+          </a>
           <div className='hidden h-36 w-[1px] lg:block bg-black dark:bg-white' />
         </div>
       </div>
