@@ -1,42 +1,46 @@
+'use client'
+
+import Link from 'next/link'
 import { MoonIcon, SunIcon } from '@radix-ui/react-icons'
 import { Button } from '@/components/ui/button'
-import { useNavigate } from 'react-router-dom'
 import { NavbarAside } from './NavbarAside'
-
-export type HeaderProps = {
-  isDarkMode: boolean
-  setDarkMode: (value: boolean) => void
-}
+import { useDarkMode } from '@/hooks/useDarkMode'
+import { usePathname } from 'next/navigation'
 
 export const css = {
   option: `font-Lexend inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:hover:bg-transparent hover:text-accent-foreground h-10 px-4 py-2 cursor-pointer w-28 text-md text-slate-500`,
-  selected: 'text-accent-foreground bg-transparent rounded-none border-b border-black dark:border-custom-green dark:text-custom-green',
+  selected:
+    'text-accent-foreground bg-transparent rounded-none border-b border-black dark:border-custom-green dark:text-custom-green',
 }
 
-const Navbar: React.FC<HeaderProps> = ({ isDarkMode, setDarkMode }) => {
-  const pathname = window.location.pathname
-  const navigate = useNavigate()
+const Navbar: React.FC = () => {
+  const pathname = usePathname()
+  const { isDarkMode, setDarkMode } = useDarkMode()
 
   return (
-    <header className='z-20 py-4 gap-9 px-6 flex justify-between items-center sticky top-0 backdrop-blur-md dark:backdrop-blur-sm border-b bg-slate-100/90 dark:bg-custom-navy/90'>
-      <h1 className='font-Inter text-2xl font-bold flex items-center justify-center h-11 w-11 rounded-full'>G</h1>
-      <ul className='hidden lg:flex max-w-5xl w-full gap-2'>
-        <li className={`${css.option} + ${pathname == '/' && css.selected}`} onClick={() => navigate('/')}>
+    <header className='w-full z-20 py-4 gap-9 px-6 flex justify-between items-center sticky top-0 backdrop-blur-md dark:backdrop-blur-sm border-b bg-slate-100/90 dark:bg-custom-navy/90'>
+      <span className='font-Inter text-2xl font-bold flex items-center justify-center h-11 w-11 rounded-full'>G</span>
+      <div className='hidden lg:flex max-w-5xl w-full gap-2'>
+        <Link className={`${css.option} + ${pathname == '/' && css.selected}`} href='/'>
           Home
-        </li>
-        <li className={`${css.option} + ${pathname == '/about' && css.selected}`} onClick={() => navigate('/about')}>
+        </Link>
+
+        <Link className={`${css.option} + ${pathname == '/about' && css.selected}`} href='/about'>
           About
-        </li>
-        <li className={`${css.option} + ${pathname == '/projects' && css.selected}`} onClick={() => navigate('/projects')}>
+        </Link>
+
+        <Link className={`${css.option} + ${pathname == '/projects' && css.selected}`} href='/projects'>
           Projects
-        </li>
-        <li className={`${css.option} + ${pathname == '/contact' && css.selected}`} onClick={() => navigate('/contact')}>
+        </Link>
+
+        <Link className={`${css.option} + ${pathname == '/contact' && css.selected}`} href='contact'>
           Contact
-        </li>
-        <li className={`${css.option} + ${pathname == '/resume' && css.selected}`} onClick={() => navigate('/resume')}>
+        </Link>
+
+        <Link className={`${css.option} + ${pathname == '/resume' && css.selected}`} href='/resume'>
           Resume
-        </li>
-      </ul>
+        </Link>
+      </div>
       <Button
         variant='ghost'
         className='hidden lg:block transition-all dark:hover:text-custom-green dark:hover:bg-slate-800/30'

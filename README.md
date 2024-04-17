@@ -5,7 +5,7 @@
   geisiel.com - v3
 </h1>
 <p align="center">
-  The third veresion of <a href="https://geisiel.com" target="_blank">geisiel.com</a> built with <a href="https://react.dev" target="_blank">React</a> and hosted with <a href="https://vercel.com" target="_blank">Vercel</a>
+  The third veresion of <a href="https://geisiel.com" target="_blank">geisiel.com</a> built with <a href="https://react.dev" target="_blank">Next</a> and hosted with <a href="https://vercel.com" target="_blank">Vercel</a>
 </p>
 <p align="center">
   Previous iterations:

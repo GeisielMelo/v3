@@ -1,5 +1,6 @@
-/** @type {import('tailwindcss').Config} */
-module.exports = {
+import type { Config } from 'tailwindcss'
+
+const config = {
   darkMode: ['class'],
   content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
   prefix: '',
@@ -21,9 +22,9 @@ module.exports = {
       },
       colors: {
         'custom-green': '#64ffda',
-        'custom-navy' : '#0a192f',
-        'custom-navy-light' : '#112240',
-        'custom-navy-shadow' : 'rgba(2, 12, 27, 0.7)',
+        'custom-navy': '#0a192f',
+        'custom-navy-light': '#112240',
+        'custom-navy-shadow': 'rgba(2, 12, 27, 0.7)',
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
@@ -80,4 +81,6 @@ module.exports = {
     },
   },
   plugins: [require('tailwindcss-animate')],
-}
+} satisfies Config
+
+export default config

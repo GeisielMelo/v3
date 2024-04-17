@@ -1,3 +1,5 @@
+'use client'
+
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from '@/components/ui/form'
 import { CheckIcon, PaperPlaneIcon, UpdateIcon } from '@radix-ui/react-icons'
 import { zodResolver } from '@hookform/resolvers/zod'
@@ -37,9 +39,9 @@ export const ContactForm: React.FC = () => {
 
   const onSubmit = async (values: z.infer<typeof formSchema>) => {
     try {
-      const service = import.meta.env.VITE_EMAILJS_SERVICE_ID
-      const template = import.meta.env.VITE_EMAILJS_TEMPLATE_ID
-      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY
+      const service = process.env.EMAILJS_SERVICE_ID
+      const template = process.env.EMAILJS_TEMPLATE_ID
+      const publicKey = process.env.EMAILJS_PUBLIC_KEY
 
       if (!service || !template || !publicKey) throw new Error('Missing .env variables')
       setLoading(true)
