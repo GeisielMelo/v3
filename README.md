@@ -37,11 +37,11 @@ I highly value the spirit of community, so you can easily clone it and make the 
 3. Running locally
 
    ```sh
-   nvm run dev --host
+   npm run dev --host
    ```
 
 4. Building
 
    ```sh
-   nvm run build
+   npm run build
    ```
