@@ -20,7 +20,7 @@ export default function Home() {
         </div>
 
         <Link
-          className='max-w-56 mt-4 transition-all bg-slate-200 hover:bg-slate-100 dark:text-custom-green dark:bg-transparent border dark:border-custom-green dark:hover:bg-slate-800 px-8 py-4 rounded-md'
+          className='max-w-56 mt-4 transition-all text-slate-700 font-medium text-sm bg-slate-200 hover:bg-slate-100 dark:text-custom-green dark:bg-transparent border dark:border-custom-green dark:hover:bg-slate-800 px-8 py-4 rounded-md'
           href='/about'
         >
           Read more <span>about me</span>

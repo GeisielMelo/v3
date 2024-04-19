@@ -13,7 +13,7 @@ export const NavbarAside: React.FC<HeaderProps> = ({ isDarkMode, setDarkMode }) 
   return (
     <Sheet>
       <SheetTrigger asChild>
-        <Button variant='outline' className='lg:hidden dark:bg-transparent'>
+        <Button variant='outline' className='lg:hidden dark:bg-transparent' name='Hamburger menu button.'>
           <HamburgerMenuIcon />
         </Button>
       </SheetTrigger>
