@@ -17,21 +17,21 @@ type FeaturedProps = {
 
 const ImageLoader: React.FC<{ element: FeaturedProps }> = ({ element }) => {
   const [imageLoaded, setImageLoaded] = useState(false)
+  const css = 'cursor-pointer aspect-video block w-full h-auto'
 
   return (
     <>
       <Image
-        className='rounded-t-lg cursor-pointer object-cover aspect-video'
+        className={css + imageLoaded ? ' block rounded-t-lg ' : ' hidden '}
         src={element.image}
         alt={`${element.title} preview image.`}
         onClick={() => window.open(element.live, '_blank')}
         onLoad={() => setImageLoaded(true)}
-        sizes="100vw"
-        style={{ display: imageLoaded ? 'block' : 'none', width: '100%', height: 'auto'}}
-        width={500}
+        sizes='100vw'
+        width={600}
         height={300}
+        priority
       />
-      {!imageLoaded && <div className='aspect-video animate-pulse bg-slate-500/60 rounded-t-lg' />}
     </>
   )
 }
