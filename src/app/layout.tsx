@@ -15,16 +15,23 @@ export const metadata: Metadata = {
     name: 'Geisiel',
     url: 'https://www.linkedin.com/in/geisiel',
   },
-  description: 'Web developer with years of experience specializing in creating optimized, responsive sites for exceptional user experiences.',
-  applicationName: "GeisielMelo",
+  description:
+    'Web developer with years of experience specializing in creating optimized, responsive sites for exceptional user experiences.',
+  applicationName: 'GeisielMelo',
   publisher: 'Geisiel',
   archives: '/static/resume.pdf',
-  creator:'Geisiel Nascimento',
+  creator: 'Geisiel Nascimento',
   icons: {
     icon: '/favicon.ico',
   },
-  keywords: ['web developer', 'web developer geisiel', 'web developer geisiel melo', 'web developer geisiel nascimento', 'geisiel open to work, open to work, geisiel melo'],
-  classification: "Portfolio - GeisielMelo",
+  keywords: [
+    'web developer',
+    'web developer geisiel',
+    'web developer geisiel melo',
+    'web developer geisiel nascimento',
+    'geisiel open to work, open to work, geisiel melo',
+  ],
+  classification: 'Portfolio - GeisielMelo',
   alternates: {
     canonical: '/',
   },
@@ -41,6 +48,9 @@ export const metadata: Metadata = {
   },
   verification: {
     google: process.env.APP_GOOGLE_SITE_VERIFICATION,
+    other: {
+      'msvalidate.01': process.env.APP_BING_SITE_VERIFICATION as string,
+    },
   },
   robots: {
     index: true,
