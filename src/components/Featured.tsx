@@ -2,7 +2,6 @@
 
 import { GitHubLogoIcon } from '@radix-ui/react-icons'
 import featuredJson from '../assets/json/featured.json'
-import { Button } from './ui/button'
 import { useState } from 'react'
 import Image from 'next/image'
 
@@ -20,19 +19,20 @@ const ImageLoader: React.FC<{ element: FeaturedProps }> = ({ element }) => {
   const css = 'cursor-pointer aspect-video block w-full h-auto'
 
   return (
-    <>
+    <a href={element.live} target='_blank' rel='noopener' className={css + (!imageLoaded && ' animate-pulse' )}>
       <Image
-        className={css + imageLoaded ? ' block rounded-t-lg ' : ' hidden '}
+        className={css + (imageLoaded ? ' block rounded-t-lg' : ' hidden')}
         src={element.image}
         alt={`${element.title} preview image.`}
-        onClick={() => window.open(element.live, '_blank')}
+        loading='eager'
         onLoad={() => setImageLoaded(true)}
         sizes='100vw'
         width={600}
         height={300}
+        title={`Featured project ${element.title}.`}
         priority
       />
-    </>
+    </a>
   )
 }
 
