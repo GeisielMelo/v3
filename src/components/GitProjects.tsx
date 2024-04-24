@@ -38,25 +38,30 @@ export const GitProjects: React.FC = () => {
           >
             <div className='flex items-center justify-between capitalize gap-2'>
               <h1>{project.name}</h1>
-              <div>
+              <div className='flex gap-[1px]'>
                 {project.homepage && (
-                  <Button
-                    className='dark:text-white dark:hover:bg-slate-800/30 dark:hover:text-custom-green transition-all cursor-pointer'
-                    variant='ghost'
-                    size='sm'
-                    onClick={() => window.open(project.homepage)}
+                  <a
+                    className='hover:bg-accent hover:text-accent-foreground dark:text-white dark:hover:bg-slate-800/30 dark:hover:text-custom-green transition-all cursor-pointer p-2 rounded-md'
+                    href={project.homepage}
+                    target='_blank'
+                    rel='noreferrer'
+                    aria-label='Open homepage'
+                    title='Homepage'
                   >
                     <ExternalLinkIcon />
-                  </Button>
+                  </a>
                 )}
-                <Button
-                  className='dark:text-white dark:hover:bg-slate-800/30 dark:hover:text-custom-green transition-all cursor-pointer'
-                  variant='ghost'
-                  size='sm'
-                  onClick={() => window.open(project.html_url)}
+
+                <a
+                  className='hover:bg-accent hover:text-accent-foreground dark:text-white dark:hover:bg-slate-800/30 dark:hover:text-custom-green transition-all cursor-pointer p-2 rounded-md'
+                  href={project.html_url}
+                  target='_blank'
+                  rel='noreferrer'
+                  aria-label='open github repo'
+                  title='Repository'
                 >
                   <GitHubLogoIcon />
-                </Button>
+                </a>
               </div>
             </div>
 

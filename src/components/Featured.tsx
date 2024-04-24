@@ -57,14 +57,17 @@ export const Featured: React.FC = () => {
             <div className='flex flex-col p-4 relative'>
               <div className='flex items-center justify-between'>
                 <h1 className='font-Lexend text-md'>{element.title}</h1>
-                <Button
-                  className='dark:bg-transparent dark:hover:text-custom-green transition-all'
-                  variant='ghost'
-                  size='sm'
-                  onClick={() => window.open(element.git, '_blank')}
+
+                <a
+                  className='hover:bg-accent hover:text-accent-foreground dark:text-white dark:hover:bg-slate-800/30 dark:hover:text-custom-green transition-all cursor-pointer p-2 rounded-md'
+                  href={element.git}
+                  target='_blank'
+                  rel='noreferrer'
+                  aria-label='open github repo'
+                  title='Repository'
                 >
                   <GitHubLogoIcon />
-                </Button>
+                </a>
               </div>
               <p className='font-Inter text-sm my-4'>{element.description}</p>
               <ul className='flex flex-wrap gap-2 capitalize'>
