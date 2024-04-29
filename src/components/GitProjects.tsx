@@ -37,11 +37,11 @@ export const GitProjects: React.FC = () => {
             className='flex flex-col p-6 gap-8 font-Lexend md:flex rounded-md shadow-md transition-all bg-slate-200/50 dark:bg-custom-navy-light/60 hover:shadow-black/50 dark:hover:shadow-custom-green/50'
           >
             <div className='flex items-center justify-between capitalize gap-2'>
-              <h1>{project.name}</h1>
+              <h3>{project.name}</h3>
               <div className='flex gap-[1px]'>
                 {project.homepage && (
                   <a
-                    className='hover:bg-accent hover:text-accent-foreground dark:text-white dark:hover:bg-slate-800/30 dark:hover:text-custom-green transition-all cursor-pointer p-2 rounded-md'
+                    className='hover:text-accent-foreground hover:bg-white dark:text-white dark:hover:bg-slate-800/30 dark:hover:text-custom-green transition-all cursor-pointer p-2 rounded-md'
                     href={project.homepage}
                     target='_blank'
                     rel='noreferrer'
@@ -53,7 +53,7 @@ export const GitProjects: React.FC = () => {
                 )}
 
                 <a
-                  className='hover:bg-accent hover:text-accent-foreground dark:text-white dark:hover:bg-slate-800/30 dark:hover:text-custom-green transition-all cursor-pointer p-2 rounded-md'
+                  className='hover:text-accent-foreground hover:bg-white dark:text-white dark:hover:bg-slate-800/30 dark:hover:text-custom-green transition-all cursor-pointer p-2 rounded-md'
                   href={project.html_url}
                   target='_blank'
                   rel='noreferrer'
