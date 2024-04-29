@@ -41,7 +41,7 @@ export const Worked: React.FC<CardProps> = ({ data }) => {
         <div className='flex flex-wrap gap-2 mt-6'>
           {data.technologies.map((element, key) => (
             <p
-              className='opacity-70 text-xs px-2 py-1 rounded-full cursor-default dark:hover:text-custom-green hover:opacity-100 border dark:border-custom-green dark:bg-custom-navy-light'
+              className='font-normal opacity-70 text-xs px-2 py-1 rounded-full cursor-default dark:hover:text-custom-green hover:opacity-100 border dark:border-custom-green dark:bg-custom-navy-light transition-all'
               key={key}
             >
               {element}
