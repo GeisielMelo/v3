@@ -56,7 +56,7 @@ export const Featured: React.FC = () => {
             <ImageLoader element={element} />
             <div className='flex flex-col p-4 relative'>
               <div className='flex items-center justify-between'>
-                <h1 className='font-Lexend text-md'>{element.title}</h1>
+                <h3 className='font-Lexend text-md'>{element.title}</h3>
 
                 <a
                   className='hover:bg-accent hover:text-accent-foreground dark:text-white dark:hover:bg-slate-800/30 dark:hover:text-custom-green transition-all cursor-pointer p-2 rounded-md'
