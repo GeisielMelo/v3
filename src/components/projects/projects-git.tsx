@@ -1,20 +1,10 @@
-'use client'
-
 import { ExternalLinkIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
 import { Button } from '@/components/ui/button'
 import gitRepos from '@/assets/json/gitRepos.json'
 import { useState } from 'react'
 
-type IData = {
-  name: string
-  description: string
-  topics: string[]
-  html_url: string
-  homepage?: string
-}
-
-export const GitProjects: React.FC = () => {
-  const data: IData[] = gitRepos
+export const Git: React.FC = () => {
+  const data: GitRepositories[] = gitRepos
   const [maxCards, setMaxCards] = useState(6)
 
   const handleSetCardsNumber = () => {

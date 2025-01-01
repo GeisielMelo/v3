@@ -77,25 +77,4 @@
   }
 }
 
-@layer base {
-  /* Custom scroll for Firefox and Chromium */
-  html {
-    scroll-behavior: smooth;
-    scrollbar-width: thin;
-    scrollbar-color: rgb(136, 146, 176) none;
-    overflow-y: scroll;
-  }
 
-  html::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  html::-webkit-scrollbar-track {
-    background: none;
-  }
-
-  html::-webkit-scrollbar-thumb {
-    background-color: rgb(136, 146, 176);
-    border-radius: none;
-  }
-}

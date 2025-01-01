@@ -2,8 +2,11 @@ import '@/styles/global.css'
 import { ReactNode } from 'react'
 import type { Metadata } from 'next'
 import NextTopLoader from 'nextjs-toploader'
-import Footer from '@/components/Footer'
-import Navbar from '@/components/Navbar'
+import Footer from '@/components/footer'
+import Navbar from '@/components/header'
+
+import { NextIntlClientProvider } from 'next-intl'
+import { getLocale, getMessages } from 'next-intl/server'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.geisiel.com/'),
@@ -58,14 +61,19 @@ export const metadata: Metadata = {
   },
 }
 
-export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
+export default async function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
+  const locale = await getLocale()
+  const messages = await getMessages()
+
   return (
-    <html lang='en'>
+    <html lang={locale}>
       <body className='flex flex-col min-h-dvh bg-slate-50/30 dark:bg-custom-navy transition-all'>
-        <NextTopLoader color='#cdcdcd' />
-        <Navbar />
-        {children}
-        <Footer />
+        <NextIntlClientProvider messages={messages}>
+          <NextTopLoader color='#cdcdcd' />
+          <Navbar locale={locale} />
+          {children}
+          <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   )

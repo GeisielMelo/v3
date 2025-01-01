@@ -1,5 +1,5 @@
 import { DownloadIcon } from '@radix-ui/react-icons'
-import { Button } from './ui/button'
+import { Button } from '../ui/button'
 
 const Download: React.FC = () => {
   return (

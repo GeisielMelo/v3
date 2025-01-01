@@ -1,15 +1,17 @@
-import { Button } from '@/components/ui/button'
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from '@/components/ui/sheet'
-import { HamburgerMenuIcon, MoonIcon, SunIcon } from '@radix-ui/react-icons'
-import { css } from './Navbar'
+import { DropdownLanguage } from './header-dropdown-language'
+import { HamburgerMenuIcon } from '@radix-ui/react-icons'
+import { ThemeButton } from './header-theme-button'
+import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import { css } from './index'
 
-export type HeaderProps = {
+type HeaderAside = {
   isDarkMode: boolean
   setDarkMode: (value: boolean) => void
 }
 
-export const NavbarAside: React.FC<HeaderProps> = ({ isDarkMode, setDarkMode }) => {
+export const HeaderAside: React.FC<HeaderAside> = ({ isDarkMode, setDarkMode }) => {
   return (
     <Sheet>
       <SheetTrigger asChild>
@@ -43,9 +45,11 @@ export const NavbarAside: React.FC<HeaderProps> = ({ isDarkMode, setDarkMode }) 
             Resume
           </Link>
         </SheetClose>
-        <Button variant='ghost' className='mt-auto' onClick={() => setDarkMode(!isDarkMode)}>
-          {isDarkMode ? <SunIcon /> : <MoonIcon />}
-        </Button>
+
+        <div className='flex gap-1'>
+          <DropdownLanguage />
+          <ThemeButton isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
+        </div>
       </SheetContent>
     </Sheet>
   )

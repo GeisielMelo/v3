@@ -1,9 +1,13 @@
-import data from '@/assets/json/technologies.json'
+'use client'
+
+import technologiesJson from '@/assets/json/technologies.json'
+import { Worked } from '@/components/about/about-worked'
+import workedJson from '@/assets/json/worked.json'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'About',
-  keywords: data,
+  keywords: technologiesJson,
 }
 
 const About: React.FC = () => {
@@ -26,7 +30,7 @@ const About: React.FC = () => {
           </p>
           <p>Here are a few technologies that I&#39;ve been using recently!</p>
           <ul className='grid  sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-4'>
-            {data.map((technology, key) => (
+            {technologiesJson.map((technology, key) => (
               <li
                 key={key}
                 className="before:content-['▹'] before:dark:text-custom-green before:text-black before:pr-2 font-Lexend text-sm"
@@ -36,6 +40,15 @@ const About: React.FC = () => {
             ))}
           </ul>
         </div>
+      </section>
+
+      <section className='py-10 max-w-5xl w-full'>
+        <h1 className='font-Inter text-[clamp(20px,4vw,25px)] leading-none font-semibold tracking-tighter text-accent-foreground'>
+          Where I&#39;ve Worked
+        </h1>
+        {workedJson.map((element, key) => (
+          <Worked data={element} key={key} />
+        ))}
       </section>
     </main>
   )
