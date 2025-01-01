@@ -1,57 +1,32 @@
-'use client'
-
-import { DropdownLanguage } from './header-dropdown-language'
-import { ArchiveButton } from './header-archive-button'
-import { ThemeButton } from './header-theme-button'
-import { useDarkMode } from '@/hooks/useDarkMode'
-import { usePathname } from 'next/navigation'
-import { HeaderAside } from './header-aside'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
+import { FC } from 'react'
 
-export const css = {
-  option: `font-Lexend inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:hover:bg-transparent hover:text-accent-foreground h-10 px-4 py-2 cursor-pointer w-28 text-md text-slate-500`,
-  selected:
-    'text-accent-foreground bg-transparent rounded-none border-b border-black dark:border-custom-green dark:text-custom-green',
-}
+const Header: FC<{ locale: string }> = ({ locale }) => {
+  const t = useTranslations('Header')
+  const keys = ['about', 'experience', 'projects'] as const
 
-const Navbar: React.FC<{ locale: string }> = ({ locale }) => {
-  const pathname = usePathname()
-  const { isDarkMode, setDarkMode } = useDarkMode()
-  const t = useTranslations('Navigation')
-
-  const navLinks = [
-    { href: `/${locale}/about`, label: t('about') },
-    { href: `/${locale}/projects`, label: t('projects') },
-    { href: `/${locale}/contact`, label: t('contact') },
-  ]
+  console.log(locale)
 
   return (
-    <header className='w-full z-20 py-4 gap-9 px-6 flex justify-between items-center sticky top-0 backdrop-blur-md dark:backdrop-blur-sm border-b bg-slate-100/90 dark:bg-custom-navy/90'>
-      <Link href={`/${locale}`}>
-        <span className='font-Inter text-2xl font-bold flex items-center justify-center h-11 w-11 rounded-full'>G</span>
-      </Link>
-      <div className='hidden lg:flex max-w-5xl w-full gap-2'>
-        {navLinks.map((link) => (
-          <Link
-            key={link.href}
-            className={`${css.option} ${pathname === link.href ? css.selected : ''}`}
-            href={link.href}
-          >
-            {link.label}
-          </Link>
-        ))}
-      </div>
+    <header className='lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-[48%] lg:flex-col lg:justify-between lg:py-24'>
+      <h1 className='text-4xl font-bold tracking-tight text-slate-200 sm:text-5xl'>{t('name')}</h1>
+      <h2 className='mt-3 text-lg font-medium tracking-tight text-slate-200 sm:text-xl'>{t('dev')}</h2>
+      <p className='mt-4 max-w-xs leading-normal'>{t('description')}</p>
 
-      <div className='gap-1 hidden lg:flex'>
-        <ArchiveButton locale={locale} />
-        <DropdownLanguage />
-        <ThemeButton isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
-      </div>
+      <nav className='nav hidden lg:block'>
+        <ul className='mt-16 w-max'>
+          {keys.map((key) => (
+            <li key={key}>
+              <Link href={'/' + locale + t(`options.${key}.href`)}>{t(`options.${key}.title`)}</Link>
+            </li>
+          ))}
+        </ul>
+      </nav>
 
-      <HeaderAside isDarkMode={isDarkMode} setDarkMode={setDarkMode} />
+      <ul className='ml-1 mt-8 flex items-center'></ul>
     </header>
   )
 }
 
-export default Navbar
+export default Header

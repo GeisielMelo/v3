@@ -1,8 +1,22 @@
 {
-  "Navigation": {
-    "about": "About",
-    "projects": "Projects",
-    "contact": "Contact",
-    "resume": "Resume"
+  "Header": {
+    "name": "Geisiel Melo",
+    "dev": "Full Stack Developer",
+    "description": "I build accessible, pixel-perfect digital experiences for the web.",
+
+    "options": {
+      "about": {
+        "title": "about",
+        "href": "#about"
+      },
+      "experience": {
+        "title": "experience",
+        "href": "#experience"
+      },
+      "projects": {
+        "title": "projects",
+        "href": "#projects"
+      }
+    }
   }
 }

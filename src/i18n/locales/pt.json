@@ -1,8 +1,21 @@
 {
-  "Navigation": {
-    "about": "Sobre",
-    "projects": "Projetos",
-    "contact": "Contato",
-    "resume": "Resumo"
+  "Header": {
+    "name": "Geisiel Melo",
+    "dev": "Full Stack Developer",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, excepturi.",
+    "options": {
+      "about": {
+        "title": "sobre",
+        "href": "#about"
+      },
+      "experience": {
+        "title": "experiência",
+        "href": "#experience"
+      },
+      "projects": {
+        "title": "projetos",
+        "href": "#projects"
+      }
+    }
   }
 }
