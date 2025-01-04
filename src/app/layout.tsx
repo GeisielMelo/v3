@@ -1,10 +1,10 @@
 import '@/styles/global.css'
-import { ReactNode } from 'react'
-import type { Metadata } from 'next'
-import Header from '@/components/header'
-import { NextIntlClientProvider } from 'next-intl'
+
+import { ThemeProvider } from '@/components/ui/theme-provider'
 import { getLocale, getMessages } from 'next-intl/server'
-import { SectionProvider } from '../../context/SectionContext'
+import { NextIntlClientProvider } from 'next-intl'
+import { Inter } from 'next/font/google'
+import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.geisiel.com/'),
@@ -59,22 +59,19 @@ export const metadata: Metadata = {
   },
 }
 
-export default async function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
+const inter = Inter({ subsets: ['latin'] })
+
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const locale = await getLocale()
   const messages = await getMessages()
 
   return (
-    <html lang={locale}>
-      <body className='flex flex-col min-h-dvh bg-slate-50/30 dark:bg-custom-navy transition-all'>
+    <html lang={locale} className={inter.className}>
+      <body className='dark:bg-black'>
         <NextIntlClientProvider messages={messages}>
-          <SectionProvider>
-            <div className='mx-auto min-h-screen max-w-screen-xl px-6 py-12 font-sans md:px-12 md:py-16 lg:py-0'>
-              <div className='lg:flex lg:justify-between lg:gap-4'>
-                <Header locale={locale} />
-                <main className='pt-24 lg:w-[52%] lg:py-24'>{children}</main>
-              </div>
-            </div>
-          </SectionProvider>
+          <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
+            {children}
+          </ThemeProvider>
         </NextIntlClientProvider>
       </body>
     </html>

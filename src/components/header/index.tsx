@@ -1,8 +1,10 @@
 'use client'
 
-import { useSection } from '@/context/SectionContext'
 import { EnvelopeClosedIcon, GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
+import { useSection } from '@/context/SectionContext'
+import { ThemeSwitch } from '../ui/theme-switch'
 import { useTranslations } from 'next-intl'
+import { DropdownLanguage } from '@/components/ui/dropdown-languages'
 import Link from 'next/link'
 import { FC } from 'react'
 
@@ -31,23 +33,25 @@ const Header: FC<{ locale: string }> = ({ locale }) => {
         </nav>
       </div>
 
-      <ul className='ml-1 mt-8 flex gap-4 items-center uppercase'>
-        <li>
-          <a href='https://github.com/GeisielMelo' className='flex p-2 rounded'>
+      <div>
+        <div className='ml-1 mt-8 flex items-center uppercase'>
+          <a href='https://github.com/GeisielMelo' className='anchor' target='_blank'>
             <GitHubLogoIcon />
           </a>
-        </li>
-        <li>
-          <a href='https://www.linkedin.com/in/geisiel' className='flex p-2 rounded'>
+
+          <a href='https://www.linkedin.com/in/geisiel' className='anchor' target='_blank'>
             <LinkedInLogoIcon />
           </a>
-        </li>
-        <li>
-          <a href='mailto:geisiel.nascimento@gmail.com' className='flex p-2 rounded'>
+
+          <a href='mailto:geisiel.nascimento@gmail.com' className='anchor' target='_blank'>
             <EnvelopeClosedIcon />
           </a>
-        </li>
-      </ul>
+
+          <DropdownLanguage />
+
+          <ThemeSwitch />
+        </div>
+      </div>
     </header>
   )
 }
