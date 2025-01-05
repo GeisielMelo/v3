@@ -5,6 +5,15 @@ const config = {
   content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
   prefix: '',
   theme: {
+    fontFamily: {
+      sans: [
+        '"Inter var", sans-serif',
+        {
+          fontFeatureSettings: '"ss03","cv02","cv11"',
+          fontVariationSettings: 'normal',
+        },
+      ],
+    },
     container: {
       center: true,
       padding: '2rem',
