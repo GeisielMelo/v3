@@ -1,0 +1,488 @@
+[
+  {
+    "name": "Accounting-app",
+    "description": "Frontend interface for an accounting app. The objective here was to create a responsive design that renders the content of each section on the same page.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/Accounting-app",
+      "live": "https://accounting-app-geisielmelo.vercel.app/",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["CSS", "HTML", "JavaScript", "Node", "React", "Styled Components"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-10-05T23:04:23Z",
+    "updated_at": "2023-12-13T20:09:48Z"
+  },
+  {
+    "name": "Blog",
+    "description": "This project aims to explore the functionality of MongoDB and learn about the POST and GET methods, as well as generating dynamic URLs.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/Blog",
+      "live": "",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["Bootstrap", "CSS", "ejs", "HTML", "JavaScript", "Node"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-05-08T02:42:33Z",
+    "updated_at": "2023-12-06T22:25:37Z"
+  },
+  {
+    "name": "Calculator",
+    "description": "Calculator app, initially designed for a course with basic functions, I added some extra features, turning it into a scientific calculator.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/Calculator",
+      "live": "https://HTMLpreview.github.io/?https://github.com/GeisielMelo/Calculator/blob/main/index.HTML",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["CSS", "HTML", "JavaScript", "Node"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-05-03T22:51:13Z",
+    "updated_at": "2023-12-13T20:29:52Z"
+  },
+  {
+    "name": "Dice-Game",
+    "description": "This is a Dice Game created using HTML, CSS, and JavaScript. The app provides a simple interface where two players can test their luck. Click 'Play,' roll one dice for each player, and determine the winner.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/Dice-Game",
+      "live": "https://HTMLpreview.github.io/?https://github.com/GeisielMelo/Dice_Game/blob/main/index.HTML",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["CSS", "HTML", "JavaScript"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-04-28T04:52:21Z",
+    "updated_at": "2023-12-13T20:30:30Z"
+  },
+  {
+    "name": "Drum",
+    "description": "A simple drum simulator created with vanilla JS, HTML, and CSS featuring seven different pieces to choose from. The selection includes a bass drum, snare drum, hi-hat, tom, cymbal, floor tom, and cowbell. You can play the drums using either your keyboard or mouse.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/Drum",
+      "live": "https://HTMLpreview.github.io/?https://github.com/GeisielMelo/Drum/blob/main/index.HTML",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["CSS", "HTML", "JavaScript"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-04-28T22:27:08Z",
+    "updated_at": "2023-12-13T20:30:23Z"
+  },
+  {
+    "name": "E-commerce",
+    "description": "This project is an e-commerce website built using Django, HTML, CSS, JavaScript, and Python, with features such as user authentication, product browsing and search, cart management, and payment integration. It also includes an admin panel for managing products, orders, and users.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/E-commerce",
+      "live": "",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["Django", "HTML", "Python"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-04-18T03:06:29Z",
+    "updated_at": "2024-04-19T17:07:10Z"
+  },
+  {
+    "name": "EasySchedule",
+    "description": "My first functional Python application. Despite the challenges, I successfully created an application for schedule management. This tool is designed to collect client information and store it in a table for future reference.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/EasySchedule",
+      "live": "",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["PySide6", "Python"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-03-31T04:06:11Z",
+    "updated_at": "2024-04-19T17:06:04Z"
+  },
+  {
+    "name": "Email-Marketing",
+    "description": "The purpose of this project is to create a Newsletter using the Mailchimp API. The project will collect basic information from customers, such as their email, first name, and last name. ",
+    "href": {
+      "github": "https://github.com/GeisielMelo/Email-Marketing",
+      "live": "",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["Bootstrap", "CSS", "HTML", "JavaScript"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-05-06T15:40:13Z",
+    "updated_at": "2023-12-13T20:28:22Z"
+  },
+  {
+    "name": "Form-multi-step",
+    "description": "This project is a form with 4 steps where the user submits their data separately to provide a better user experience while filling out each step.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/Form-multi-step",
+      "live": "",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["CSS", "HTML", "Node", "React", "Styled Components"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-06-12T19:07:47Z",
+    "updated_at": "2023-12-13T20:29:33Z"
+  },
+  {
+    "name": "GeisielMelo",
+    "description": "Repository associated with my GitHub homepage.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/GeisielMelo",
+      "live": "",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["HTML"],
+    "archived": true,
+    "stargazers_count": 1,
+    "watchers_count": 1,
+    "forks": 0,
+    "watchers": 1,
+    "created_at": "2023-05-21T17:14:13Z",
+    "updated_at": "2024-08-18T00:20:15Z"
+  },
+  {
+    "name": "GNM-Chat",
+    "description": "A complete chat platform where you can add contacts and send real-time messages, very simple to use and fully responsive. ",
+    "href": {
+      "github": "https://github.com/GeisielMelo/GNM-Chat",
+      "live": "https://gnm-chat.vercel.app",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["Firebase", "Lucide", "React", "Tailwind CSS"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2024-02-15T02:55:10Z",
+    "updated_at": "2024-02-20T17:12:38Z"
+  },
+  {
+    "name": "LandingPage",
+    "description": "I crafted a landing page as part of the Otavio Miranda course, applying the knowledge gained throughout the program. The objective of this project was to construct a responsive and visually appealing single-page website, utilizing the elements provided in the course.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/LandingPage",
+      "live": "https://landingpagegeisielmelo.netlify.app/",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["CSS", "HTML", "JavaScript"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-04-09T01:37:03Z",
+    "updated_at": "2023-12-13T20:30:50Z"
+  },
+  {
+    "name": "Medium-level-login-system",
+    "description": "Medium-level login system inspired by the old League of Legends login screen. Developed in my free time using the MERN tech stack, the goal is to provide a clean and aesthetically pleasing user experience.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/Medium-level-login-system",
+      "live": "",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["Express", "MongoDB", "Node", "React", "Styled Components"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-07-12T15:11:16Z",
+    "updated_at": "2023-12-06T22:54:11Z"
+  },
+  {
+    "name": "MinimalApi",
+    "description": "API created as part of my studies of C# ASP .NET Core 8. The objective of this app is to create a safe, fast, and scalable API.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/MinimalApi",
+      "live": "",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["ASP.NET", "C#", "MongoDB"],
+    "archived": true,
+    "stargazers_count": 2,
+    "watchers_count": 2,
+    "forks": 0,
+    "watchers": 2,
+    "created_at": "2024-02-04T15:38:12Z",
+    "updated_at": "2024-08-21T01:26:37Z"
+  },
+  {
+    "name": "Profile-visualizer",
+    "description": "A more effective way to view user information through graphs and statistics. Here, you can access all relevant details about GitHub users with ease.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/Profile-visualizer",
+      "live": "https://profile-visualizer.vercel.app",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["CSS", "HTML", "JavaScript", "Node", "React", "Styled Components", "TypeScript"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-12-09T20:11:08Z",
+    "updated_at": "2023-12-13T20:11:46Z"
+  },
+  {
+    "name": "Qrcode-generator",
+    "description": "Generate QR Codes instantly with this application, designed for hassle-free creation based on user input. Ideal for sharing contact details, website links, or custom messages, it also allows easy downloads for versatile usage in projects or printed materials.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/Qrcode-generator",
+      "live": "https://preeminent-hotteok-942a68.netlify.app",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["CSS", "HTML", "JavaScript", "Node", "React", "Styled Components"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-06-19T22:00:19Z",
+    "updated_at": "2023-12-13T20:25:01Z"
+  },
+  {
+    "name": "React-table",
+    "description": "Learning how to make advanced tables in HTML with react-table package. This app illustrates the step-by-step development of a comprehensive advanced table, organized into 5 stages. ",
+    "href": {
+      "github": "https://github.com/GeisielMelo/React-table",
+      "live": "https://react-table-gray.vercel.app",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["CSS", "HTML", "JavaScript", "Node", "React"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-10-07T06:09:55Z",
+    "updated_at": "2023-12-13T20:09:59Z"
+  },
+  {
+    "name": "reminders-client",
+    "description": "Reminders' frontend, an intuitive note-taking app inspired by Google Keep. Built with the MERN stack, emphasizing efficiency in React, database management, and authentication.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/reminders-client",
+      "live": "https://reminders-client.vercel.app",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["Express", "MongoDB", "Node", "React"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-05-21T03:31:24Z",
+    "updated_at": "2023-11-30T02:53:42Z"
+  },
+  {
+    "name": "reminders-server",
+    "description": "This API offers essential endpoints for user authentication, user data retrieval, and repository information. It supports key features such as sign-in, sign-out, user creation, and repository management, enhancing the functionality of the reminders application.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/reminders-server",
+      "live": "https://reminders-client.vercel.app/",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["api", "MongoDB", "Node", "TypeScript"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-06-01T04:19:13Z",
+    "updated_at": "2023-12-13T20:19:49Z"
+  },
+  {
+    "name": "RestfulAPI",
+    "description": "TypeScript RESTful API built with  Node and Express. This repository serves as a template for streamlined development, allowing for quick setup and bypassing minor implementation steps in future applications.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/RestfulAPI",
+      "live": "",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["Express", "JavaScript", "MongoDB", "Node", "TypeScript"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-11-12T22:47:19Z",
+    "updated_at": "2024-02-21T18:31:36Z"
+  },
+  {
+    "name": "Simon-Game",
+    "description": "Every time you successfully reproduce the sequence, the game will become more challenging, adding more elements to the sequence. But be careful, if you make a mistake, the game will end and you will have to start over.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/Simon-Game",
+      "live": "",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["CSS", "HTML", "JavaScript", "Node"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-04-29T16:56:49Z",
+    "updated_at": "2023-12-13T20:30:10Z"
+  },
+  {
+    "name": "SplashScreen",
+    "description": "Circular Splash Screen is designed to check the existence of certain files and create them if they don't exist to ensure proper system functionality.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/SplashScreen",
+      "live": "",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["PySide6", "Python"],
+    "archived": true,
+    "stargazers_count": 7,
+    "watchers_count": 7,
+    "forks": 0,
+    "watchers": 7,
+    "created_at": "2023-04-01T03:27:22Z",
+    "updated_at": "2024-10-23T05:20:13Z"
+  },
+  {
+    "name": "TMDb",
+    "description": "An app created in my free time with the aim of being a front-end-only application powered by data from TheMovieDB. It was designed to be a user-friendly platform where you can effortlessly search for movie and series information.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/TMDb",
+      "live": "https://tmdb.geisielmelo.vercel.app",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["Firebase", "Lucide", "React", "Tailwind CSS"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-12-15T18:41:17Z",
+    "updated_at": "2024-01-31T03:32:12Z"
+  },
+  {
+    "name": "v1",
+    "description": "A platform designed to streamline communication and showcase my projects. It was one of my first projects on React, but I believe I did a great job.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/v1",
+      "live": "https://geisielmelo.netlify.app/",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["Node", "React", "Styled Components"],
+    "archived": true,
+    "stargazers_count": 1,
+    "watchers_count": 1,
+    "forks": 1,
+    "watchers": 1,
+    "created_at": "2023-06-03T03:25:11Z",
+    "updated_at": "2023-12-07T14:39:00Z"
+  },
+  {
+    "name": "v2",
+    "description": "Version 2.0 of my portfolio, built with Vite for better performance and featuring new additions such as an archive page and direct contact functionality.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/v2",
+      "live": "https://v2.geisielmelo.vercel.app/",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["HTML", "JavaScript", "React", "Styled Components"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-11-02T15:38:36Z",
+    "updated_at": "2024-04-16T14:36:47Z"
+  },
+  {
+    "name": "video-creator-robot",
+    "description": "Application developed to create mass quiz-style videos for social media platforms such as TikTok, Kawai, YouTube, etc.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/video-creator-robot",
+      "live": "",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["ElevenLabs", "Express", "ffmpeg", "imagemagick", "MongoDB", "Node", "React"],
+    "archived": true,
+    "stargazers_count": 6,
+    "watchers_count": 6,
+    "forks": 2,
+    "watchers": 6,
+    "created_at": "2023-09-05T18:52:49Z",
+    "updated_at": "2025-01-10T04:41:57Z"
+  },
+  {
+    "name": "Weather",
+    "description": "Weather application that provides real-time weather information based on the user's exact location using Geolocation. It includes a search bar implementation for users to search for weather conditions in specific locations.",
+    "href": {
+      "github": "https://github.com/GeisielMelo/Weather",
+      "live": "https://geisielmelo-weather.netlify.app/",
+      "thumbnail": ""
+    },
+    "made_at": "Personal P.",
+    "topics": ["Node", "React", "Styled Components"],
+    "archived": true,
+    "stargazers_count": 0,
+    "watchers_count": 0,
+    "forks": 0,
+    "watchers": 0,
+    "created_at": "2023-06-14T12:11:20Z",
+    "updated_at": "2023-12-13T20:26:06Z"
+  }
+]

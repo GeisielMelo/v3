@@ -1,16 +1,14 @@
 'use client'
 
 import { EnvelopeClosedIcon, GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
-import { useSection } from '@/context/SectionContext'
-import { ThemeSwitch } from '../ui/theme-switch'
-import { useTranslations } from 'next-intl'
 import { DropdownLanguage } from '@/components/ui/dropdown-languages'
+import { ThemeSwitch } from '@/components/ui/theme-switch'
+import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { FC } from 'react'
 
-const Header: FC<{ locale: string }> = ({ locale }) => {
+export const Header: FC<{ locale: string }> = ({ locale }) => {
   const t = useTranslations('Header')
-  const { visibleSection } = useSection()
   const keys = ['about', 'experience', 'projects'] as const
 
   return (
@@ -22,17 +20,12 @@ const Header: FC<{ locale: string }> = ({ locale }) => {
 
         <nav className='nav hidden lg:block'>
           <ul className='mt-16 w-max'>
-            {keys.map((key) => (
+            {keys.map((key, index) => (
               <li
-                key={key}
+                key={index}
                 className='text-xs font-bold uppercase tracking-widest text-zinc-500 hover:text-zinc-300 transition-all'
               >
-                <Link
-                  href={locale + '/' + t(`options.${key}.href`)}
-                  className={visibleSection == key ? 'text-[#ededed]' : ''}
-                >
-                  {t(`options.${key}.title`)}
-                </Link>
+                <Link href={locale + '/' + t(`options.${key}.href`)}>{t(`options.${key}.title`)}</Link>
               </li>
             ))}
           </ul>
@@ -61,5 +54,3 @@ const Header: FC<{ locale: string }> = ({ locale }) => {
     </header>
   )
 }
-
-export default Header

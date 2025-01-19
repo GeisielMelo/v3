@@ -3,7 +3,6 @@ import '@/styles/global.css'
 import { ThemeProvider } from '@/components/ui/theme-provider'
 import { getLocale, getMessages } from 'next-intl/server'
 import { NextIntlClientProvider } from 'next-intl'
-import { Inter } from 'next/font/google'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
@@ -59,14 +58,12 @@ export const metadata: Metadata = {
   },
 }
 
-const inter = Inter({ subsets: ['latin'] })
-
 export default async function RootLayout({ children }: { children: React.ReactNode }) {
   const locale = await getLocale()
   const messages = await getMessages()
 
   return (
-    <html lang={locale} className={inter.className}>
+    <html lang={locale}>
       <body className='dark:bg-black'>
         <NextIntlClientProvider messages={messages}>
           <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>

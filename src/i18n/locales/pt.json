@@ -30,28 +30,31 @@
   },
 
   "Experience": {
-    "title": "experience",
-    "card": {
+    "title": "experiência",
+    "cards": {
       "c1": {
         "start": "2000",
         "end": "2024",
-        "title": "Software Engineer",
+        "title": "Software Engineer PT",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, excepturi. Quas cupiditate, atque voluptas recusandae voluptates id corporis officia minus ullam corrupti at harum alias, sit autem iusto officiis temporibus.",
-        "tags": "Node, TypeScript, React, TailwindCSS"
+        "tags": "Node, TypeScript, React, TailwindCSS",
+        "href": ""
       },
       "c2": {
         "start": "2000",
         "end": "2024",
-        "title": "Software Engineer",
+        "title": "Software Engineer PT",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, excepturi. Quas cupiditate, atque voluptas recusandae voluptates id corporis officia minus ullam corrupti at harum alias, sit autem iusto officiis temporibus.",
-        "tags": "Node, TypeScript, React, TailwindCSS"
+        "tags": "Node, TypeScript, React, TailwindCSS",
+        "href": ""
       },
       "c3": {
         "start": "2000",
         "end": "2024",
-        "title": "Software Engineer",
+        "title": "Software Engineer PT",
         "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, excepturi. Quas cupiditate, atque voluptas recusandae voluptates id corporis officia minus ullam corrupti at harum alias, sit autem iusto officiis temporibus.",
-        "tags": "Node, TypeScript, React, TailwindCSS"
+        "tags": "Node, TypeScript, React, TailwindCSS",
+        "href": ""
       }
     }
   }
