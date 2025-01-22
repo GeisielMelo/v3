@@ -58,5 +58,43 @@
         "href": ""
       }
     }
+  },
+
+  "Projects": {
+    "title": "Projects",
+    "cards": {
+      "c1": {
+        "title": "Vacancies",
+        "description": "Vacancies were created as an improved method for efficiently organizing your applications.",
+        "image": "https://raw.githubusercontent.com/GeisielMelo/v3/main/public/img/vacancies.png",
+        "git": "https://github.com/GeisielMelo/vacancies",
+        "live": "https://vacancies-client.vercel.app/",
+        "tags": "Express, Mongodb, Node, React, Tailwind CSS"
+      },
+      "c2": {
+        "title": "TMDb",
+        "description": "An app created in my free time with the aim of being a front-end-only application powered by data from TheMovieDB.",
+        "image": "https://raw.githubusercontent.com/GeisielMelo/v3/main/public/img/tmdb.png",
+        "git": "https://github.com/GeisielMelo/TMDb",
+        "live": "https://tmdb.geisielmelo.vercel.app/",
+        "tags": "Firebase, Lucide, React, Swiper, Tailwind CSS"
+      },
+      "c3": {
+        "title": "Profile Visualizer",
+        "description": "A more effective way to view user information through graphs and statistics.",
+        "image": "https://raw.githubusercontent.com/GeisielMelo/v3/main/public/img/profilevizualizer.png",
+        "git": "https://github.com/GeisielMelo/Profile-visualizer",
+        "live": "https://profile-visualizer.vercel.app/",
+        "tags": "Node, React, Styled Components, Typescript"
+      },
+      "c4": {
+        "title": "GNM-Chat",
+        "description": "A complete chat platform where you can add contacts and send real-time messages, very simple to use and fully responsive.",
+        "image": "https://raw.githubusercontent.com/GeisielMelo/v3/main/public/img/gnmchat.png",
+        "git": "https://github.com/GeisielMelo/GNM-Chat",
+        "live": "https://gnm-chat.vercel.app/",
+        "tags": "Firebase, Lucide, React, Tailwind CSS"
+      }
+    }
   }
 }
