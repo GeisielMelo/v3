@@ -1,11 +1,14 @@
 'use client'
 
-import { EnvelopeClosedIcon, GitHubLogoIcon, LinkedInLogoIcon } from '@radix-ui/react-icons'
 import { DropdownLanguage } from '@/components/ui/dropdown-languages'
-import { ThemeSwitch } from '@/components/ui/theme-switch'
 import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { FC } from 'react'
+
+import FolderZipIcon from '@mui/icons-material/FolderZip';
+import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import GitHubIcon from '@mui/icons-material/GitHub'
+import EmailIcon from '@mui/icons-material/Email'
 
 export const Header: FC<{ locale: string }> = ({ locale }) => {
   const t = useTranslations('Header')
@@ -32,24 +35,39 @@ export const Header: FC<{ locale: string }> = ({ locale }) => {
         </nav>
       </div>
 
-      <div>
-        <div className='ml-1 mt-8 flex items-center uppercase'>
-          <a href='https://github.com/GeisielMelo' className='anchor' target='_blank'>
-            <GitHubLogoIcon />
-          </a>
+      <div className='mt-8 flex items-center gap-2' aria-label='Social media'>
+        <a
+          href='https://github.com/GeisielMelo'
+          className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1 rounded-sm'
+          target='_blank'
+        >
+          <GitHubIcon fontSize='small' />
+        </a>
 
-          <a href='https://www.linkedin.com/in/geisiel' className='anchor' target='_blank'>
-            <LinkedInLogoIcon />
-          </a>
+        <a
+          href='https://www.linkedin.com/in/geisiel'
+          className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1 rounded-sm'
+          target='_blank'
+        >
+          <LinkedInIcon fontSize='small' />
+        </a>
 
-          <a href='mailto:geisiel.nascimento@gmail.com' className='anchor' target='_blank'>
-            <EnvelopeClosedIcon />
-          </a>
+        <a
+          href='mailto:geisiel.nascimento@gmail.com'
+          className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1 rounded-sm'
+          target='_blank'
+        >
+          <EmailIcon fontSize='small' />
+        </a>
 
-          <DropdownLanguage />
+        <Link
+          href={locale + '/archive'}
+          className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1 rounded-sm'
+        >
+          <FolderZipIcon fontSize='small' />
+        </Link>
 
-          <ThemeSwitch />
-        </div>
+        <DropdownLanguage />
       </div>
     </header>
   )

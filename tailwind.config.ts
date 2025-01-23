@@ -26,6 +26,10 @@ const config = {
         'light-shadow': '0 10px 30px -15px rgba(2, 12, 27, 0.7)',
       },
       colors: {
+        custom: {
+          one: 'hsl(220 37% 8%)',
+          two: 'hsl(17 97% 48%)'
+        },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',

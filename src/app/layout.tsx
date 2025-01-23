@@ -1,6 +1,5 @@
 import '@/styles/global.css'
 
-import { ThemeProvider } from '@/components/ui/theme-provider'
 import { getLocale, getMessages } from 'next-intl/server'
 import { NextIntlClientProvider } from 'next-intl'
 import type { Metadata } from 'next'
@@ -64,12 +63,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   return (
     <html lang={locale}>
-      <body className='dark:bg-black'>
-        <NextIntlClientProvider messages={messages}>
-          <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange>
-            {children}
-          </ThemeProvider>
-        </NextIntlClientProvider>
+      <body className='bg-custom-one text-slate-400'>
+        <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>
   )
