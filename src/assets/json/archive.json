@@ -1,0 +1,308 @@
+[
+  {
+    "name": "MegaRevisão",
+    "made_at": "REDE UniFTC",
+    "repo": "",
+    "live": "https://megarevisao.com.br",
+    "tags": ["Next.js", "TypeScript", "Node", "Tailwind CSS", "Shadcn"],
+    "date": "2024-10-05T23:04:23Z",
+    "archive": false
+  },
+  {
+    "name": "Transferência Externa Unex",
+    "made_at": "REDE UniFTC",
+    "repo": "",
+    "live": "https://unex.edu.br/transferencia",
+    "tags": ["TypeScript", "Tailwind CSS", "React", "Node"],
+    "date": "2024-10-05T23:04:23Z",
+    "archive": false
+  },
+  {
+    "name": "Calculadora Enem Unex",
+    "made_at": "REDE UniFTC",
+    "repo": "",
+    "live": "https://unex.edu.br/calculadoraenem",
+    "tags": ["Tailwind CSS", "TypeScript", "React", "Node"],
+    "date": "2024-10-05T23:04:23Z",
+    "archive": false
+  },
+  {
+    "name": "Marketing CMS - Private",
+    "made_at": "REDE UniFTC",
+    "repo": "",
+    "live": "",
+    "tags": ["Next.js", "Node", "TypeScript", "PrismaORM"],
+    "date": "2024-10-05T23:04:23Z",
+    "archive": false
+  },
+  {
+    "name": "UNEX | MED",
+    "made_at": "REDE UniFTC",
+    "repo": "",
+    "live": "https://unexmed.com.br",
+    "tags": ["Next.js", "TypeScript", "Node", "Tailwind CSS", "Shadcn"],
+    "date": "2024-10-05T23:04:23Z",
+    "archive": false
+  },
+  {
+    "name": "Marketing API - Private",
+    "made_at": "REDE UniFTC",
+    "repo": "",
+    "live": "",
+    "tags": ["Nest.js", "MySQL", "Node", "TypeScript", "PrismaORM"],
+    "date": "2024-10-05T23:04:23Z",
+    "archive": false
+  },
+  {
+    "name": "Vestibular UniFTC",
+    "made_at": "REDE UniFTC",
+    "repo": "",
+    "live": "https://vestibular.uniftc.edu.br",
+    "tags": ["TypeScript", "React", "Node", "Tailwind CSS"],
+    "date": "2024-10-05T23:04:23Z",
+    "archive": false
+  },
+  {
+    "name": "Accounting-app",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/Accounting-app",
+    "live": "https://accounting-app-geisielmelo.vercel.app/",
+    "tags": ["CSS", "HTML", "JavaScript", "Node", "React", "Styled Components"],
+    "date": "2023-10-05T23:04:23Z",
+    "archive": false
+  },
+  {
+    "name": "Blog",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/Blog",
+    "live": "",
+    "tags": ["Bootstrap", "CSS", "ejs", "HTML", "JavaScript", "Node"],
+    "date": "2023-05-08T02:42:33Z",
+    "archive": false
+  },
+  {
+    "name": "Calculator",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/Calculator",
+    "live": "https://HTMLpreview.github.io/?https://github.com/GeisielMelo/Calculator/blob/main/index.HTML",
+    "tags": ["CSS", "HTML", "JavaScript", "Node"],
+    "date": "2023-05-03T22:51:13Z",
+    "archive": false
+  },
+  {
+    "name": "Dice-Game",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/Dice-Game",
+    "live": "https://HTMLpreview.github.io/?https://github.com/GeisielMelo/Dice_Game/blob/main/index.HTML",
+    "tags": ["CSS", "HTML", "JavaScript"],
+    "date": "2023-04-28T04:52:21Z",
+    "archive": false
+  },
+  {
+    "name": "Drum",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/Drum",
+    "live": "https://HTMLpreview.github.io/?https://github.com/GeisielMelo/Drum/blob/main/index.HTML",
+    "tags": ["CSS", "HTML", "JavaScript"],
+    "date": "2023-04-28T22:27:08Z",
+    "archive": false
+  },
+  {
+    "name": "E-commerce",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/E-commerce",
+    "live": "",
+    "tags": ["Django", "HTML", "Python"],
+    "date": "2023-04-18T03:06:29Z",
+    "archive": false
+  },
+  {
+    "name": "EasySchedule",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/EasySchedule",
+    "live": "",
+    "tags": ["PySide6", "Python"],
+    "date": "2023-03-31T04:06:11Z",
+    "archive": false
+  },
+  {
+    "name": "Email-Marketing",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/Email-Marketing",
+    "live": "",
+    "tags": ["Bootstrap", "CSS", "HTML", "JavaScript"],
+    "date": "2023-05-06T15:40:13Z",
+    "archive": false
+  },
+  {
+    "name": "Form-multi-step",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/Form-multi-step",
+    "live": "",
+    "tags": ["CSS", "HTML", "Node", "React", "Styled Components"],
+    "date": "2023-06-12T19:07:47Z",
+    "archive": false
+  },
+  {
+    "name": "GeisielMelo",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/GeisielMelo",
+    "live": "",
+    "tags": ["HTML"],
+    "date": "2023-05-21T17:14:13Z",
+    "archive": false
+  },
+  {
+    "name": "GNM-Chat",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/GNM-Chat",
+    "live": "https://gnm-chat.vercel.app",
+    "tags": ["Firebase", "Lucide", "React", "Tailwind CSS"],
+    "date": "2024-02-15T02:55:10Z",
+    "archive": false
+  },
+  {
+    "name": "LandingPage",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/LandingPage",
+    "live": "https://landingpagegeisielmelo.netlify.app/",
+    "tags": ["CSS", "HTML", "JavaScript"],
+    "date": "2023-04-09T01:37:03Z",
+    "archive": false
+  },
+  {
+    "name": "Medium-level-login-system",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/Medium-level-login-system",
+    "live": "",
+    "tags": ["Express", "MongoDB", "Node", "React", "Styled Components"],
+    "date": "2023-07-12T15:11:16Z",
+    "archive": false
+  },
+  {
+    "name": "MinimalApi",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/MinimalApi",
+    "live": "",
+    "tags": ["ASP.NET", "C#", "MongoDB"],
+    "date": "2024-02-04T15:38:12Z",
+    "archive": false
+  },
+  {
+    "name": "Profile-visualizer",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/Profile-visualizer",
+    "live": "https://profile-visualizer.vercel.app",
+    "tags": ["CSS", "HTML", "JavaScript", "Node", "React", "Styled Components", "TypeScript"],
+    "date": "2023-12-09T20:11:08Z",
+    "archive": false
+  },
+  {
+    "name": "Qrcode-generator",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/Qrcode-generator",
+    "live": "https://preeminent-hotteok-942a68.netlify.app",
+    "tags": ["CSS", "HTML", "JavaScript", "Node", "React", "Styled Components"],
+    "date": "2023-06-19T22:00:19Z",
+    "archive": false
+  },
+  {
+    "name": "React-table",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/React-table",
+    "live": "https://react-table-gray.vercel.app",
+    "tags": ["CSS", "HTML", "JavaScript", "Node", "React"],
+    "date": "2023-10-07T06:09:55Z",
+    "archive": false
+  },
+  {
+    "name": "reminders-client",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/reminders-client",
+    "live": "https://reminders-client.vercel.app",
+    "tags": ["Express", "MongoDB", "Node", "React"],
+    "date": "2023-05-21T03:31:24Z",
+    "archive": false
+  },
+  {
+    "name": "reminders-server",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/reminders-server",
+    "live": "https://reminders-client.vercel.app/",
+    "tags": ["api", "MongoDB", "Node", "TypeScript"],
+    "date": "2023-06-01T04:19:13Z",
+    "archive": false
+  },
+  {
+    "name": "RestfulAPI",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/RestfulAPI",
+    "live": "",
+    "tags": ["Express", "JavaScript", "MongoDB", "Node", "TypeScript"],
+    "date": "2023-11-12T22:47:19Z",
+    "archive": false
+  },
+  {
+    "name": "Simon-Game",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/Simon-Game",
+    "live": "",
+    "tags": ["CSS", "HTML", "JavaScript", "Node"],
+    "date": "2023-04-29T16:56:49Z",
+    "archive": false
+  },
+  {
+    "name": "SplashScreen",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/SplashScreen",
+    "live": "",
+    "tags": ["PySide6", "Python"],
+    "date": "2023-04-01T03:27:22Z",
+    "archive": false
+  },
+  {
+    "name": "TMDb",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/TMDb",
+    "live": "https://tmdb.geisielmelo.vercel.app",
+    "tags": ["Firebase", "Lucide", "React", "Tailwind CSS"],
+    "date": "2023-12-15T18:41:17Z",
+    "archive": false
+  },
+  {
+    "name": "v1",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/v1",
+    "live": "https://geisielmelo.netlify.app/",
+    "tags": ["Node", "React", "Styled Components"],
+    "date": "2023-06-03T03:25:11Z",
+    "archive": false
+  },
+  {
+    "name": "v2",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/v2",
+    "live": "https://v2.geisielmelo.vercel.app/",
+    "tags": ["HTML", "JavaScript", "React", "Styled Components"],
+    "date": "2023-11-02T15:38:36Z",
+    "archive": false
+  },
+  {
+    "name": "video-creator-robot",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/video-creator-robot",
+    "live": "",
+    "tags": ["ElevenLabs", "Express", "ffmpeg", "imagemagick", "MongoDB", "Node", "React"],
+    "date": "2023-09-05T18:52:49Z",
+    "archive": false
+  },
+  {
+    "name": "Weather",
+    "made_at": "",
+    "repo": "https://github.com/GeisielMelo/Weather",
+    "live": "https://geisielmelo-weather.netlify.app/",
+    "tags": ["Node", "React", "Styled Components"],
+    "date": "2023-06-14T12:11:20Z",
+    "archive": false
+  }
+]

@@ -1,0 +1,99 @@
+{
+  "Header": {
+    "name": "Geisiel Melo",
+    "dev": "Full Stack Developer",
+    "description": "Construir experiências digitais excepcionais é a minha especialidade como desenvolvedor.",
+    "options": {
+      "about": {
+        "title": "sobre",
+        "href": "#about"
+      },
+      "experience": {
+        "title": "experiência",
+        "href": "#experience"
+      },
+      "projects": {
+        "title": "projetos",
+        "href": "#projects"
+      }
+    }
+  },
+
+  "About": {
+    "title": "sobre",
+    "paragraph": {
+      "p1": "Sou uma pessoa movida por desafios e comprometida em entregar o melhor resultado no menor tempo possível. Para mim, não basta apenas criar algo funcional; busco ir além, unindo design atrativo, usabilidade intuitiva e desempenho impecável — tanto na interface quanto no código.",
+      "p2": "Atualmente, atuo como desenvolvedor web na UniFTC, com foco em acessibilidade e performance. Nos últimos meses, mergulhei de cabeça na criação de sites, APIs e integrações, garantindo que cada projeto funcione perfeitamente e ofereça aos usuários uma experiência única e fluida.",
+      "p3": "Minha jornada começou desenvolvendo soluções para trabalhadores autônomos e pequenos empresários. Esse período foi transformador, pois me permitiu explorar diversas tecnologias e entender as necessidades específicas de cada cliente, moldando a maneira como abordo os projetos hoje.",
+      "p4": "Nas horas vagas, gosto de recarregar as energias jogando com amigos ou me perdendo em boas séries."
+    }
+  },
+
+  "Experience": {
+    "title": "experience",
+    "cards": {
+      "c1": {
+        "start": "2024",
+        "end": "Today",
+        "title": "Full Stack Developer · UniFTC",
+        "description": "Desenvolvimento de websites com foco em acessibilidade e performance. | Criação de APIs robustas e funcionais. | Integração de sistemas para garantir comunicação eficiente entre diferentes plataformas. | Garantia de que todos os projetos entreguem uma experiência fluida e excepcional aos usuários. | Solução de problemas e otimização de processos para manter os projetos funcionando perfeitamente.",
+        "tags": "SQL, TypeScript, Next, Nest, TailwindCSS, PHP",
+        "href": ""
+      },
+      "c2": {
+        "start": "2020",
+        "end": "2024",
+        "title": "Full Stack Developer · Freelancer",
+        "description": "Desenvolvimento full-stack de aplicações web utilizando tecnologias modernas, como MongoDB, Express, React, Node e TypeScript. | Criação de APIs e interfaces com foco na melhoria da experiência do usuário. | Implementação de práticas de programação robustas, incluindo controle de versão com Git. | Participação ativa em todas as etapas do ciclo de desenvolvimento de aplicações, desde o planejamento até o lançamento.",
+        "tags": "MongoDB, Express, React, TailwindCSS, TypeScript",
+        "href": ""
+      },
+      "c3": {
+        "start": "2020",
+        "end": "2022",
+        "title": "Front-end Developer · Loja TrapStar",
+        "description": "Desenvolvimento, manutenção e implantação de código em produção para sites de clientes, utilizando principalmente HTML, CSS e JavaScript. | Colaboração com a equipe de design para promover um ambiente de trabalho coeso e garantir experiências de usuário consistentes. | Realização de testes de qualidade para assegurar compatibilidade entre navegadores, velocidade e responsividade.",
+        "tags": "HTML, CSS, JavaScript",
+        "href": ""
+      }
+    }
+  },
+
+  "Projects": {
+    "title": "Projects",
+    "cards": {
+      "c1": {
+        "title": "Vacancies",
+        "description": "Vacancies foi um projeto desenvolvido como um método aprimorado para organizar suas candidaturas de forma mais eficiente.",
+        "image": "/img/vacancies.png",
+        "git": "https://github.com/GeisielMelo/vacancies",
+        "live": "https://vacancies-client.vercel.app/",
+        "tags": "Express, Mongodb, Node, React, Tailwind CSS"
+      },
+      "c2": {
+        "title": "TMDb",
+        "description": "Um aplicativo criado no meu tempo livre com o objetivo de ser uma aplicação exclusivamente front-end alimentada por dados do TheMovieDB.",
+        "image": "/img/tmdb.png",
+        "git": "https://github.com/GeisielMelo/TMDb",
+        "live": "https://tmdb.geisielmelo.vercel.app/",
+        "tags": "Firebase, Lucide, React, Swiper, Tailwind CSS"
+      },
+      "c3": {
+        "title": "Profile Visualizer",
+        "description": "Uma forma mais eficaz de visualizar informações dos usuários por meio de gráficos e estatísticas.",
+        "image": "/img/profilevizualizer.png",
+        "git": "https://github.com/GeisielMelo/Profile-visualizer",
+        "live": "https://profile-visualizer.vercel.app/",
+        "tags": "Node, React, Styled Components, Typescript"
+      },
+      "c4": {
+        "title": "GNM-Chat",
+        "description": "Uma plataforma de chat completa onde você pode adicionar contatos e enviar mensagens em tempo real, muito simples de usar e totalmente responsiva.",
+        "image": "/img/gnmchat.png",
+        "git": "https://github.com/GeisielMelo/GNM-Chat",
+        "live": "https://gnm-chat.vercel.app/",
+        "tags": "Firebase, Lucide, React, Tailwind CSS"
+      }
+    }
+  }
+}

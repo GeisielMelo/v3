@@ -5,6 +5,15 @@ const config = {
   content: ['./pages/**/*.{ts,tsx}', './components/**/*.{ts,tsx}', './app/**/*.{ts,tsx}', './src/**/*.{ts,tsx}'],
   prefix: '',
   theme: {
+    fontFamily: {
+      sans: [
+        '"Inter var", sans-serif',
+        {
+          fontFeatureSettings: '"ss03","cv02","cv11"',
+          fontVariationSettings: 'normal',
+        },
+      ],
+    },
     container: {
       center: true,
       padding: '2rem',
@@ -13,18 +22,14 @@ const config = {
       },
     },
     extend: {
-      fontFamily: {
-        Lexend: ['Lexend', 'sans-serif'],
-        Inter: ['Inter', 'sans-serif'],
-      },
       boxShadow: {
         'light-shadow': '0 10px 30px -15px rgba(2, 12, 27, 0.7)',
       },
       colors: {
-        'custom-green': '#64ffda',
-        'custom-navy': '#0a192f',
-        'custom-navy-light': '#112240',
-        'custom-navy-shadow': 'rgba(2, 12, 27, 0.7)',
+        custom: {
+          one: 'hsl(220 37% 8%)',
+          two: 'hsl(17 97% 48%)'
+        },
         border: 'hsl(var(--border))',
         input: 'hsl(var(--input))',
         ring: 'hsl(var(--ring))',
