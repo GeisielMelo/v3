@@ -5,7 +5,7 @@ import { useTranslations } from 'next-intl'
 import Link from 'next/link'
 import { FC } from 'react'
 
-import FolderZipIcon from '@mui/icons-material/FolderZip';
+import FolderZipIcon from '@mui/icons-material/FolderZip'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import EmailIcon from '@mui/icons-material/Email'
@@ -22,12 +22,9 @@ export const Header: FC<{ locale: string }> = ({ locale }) => {
         <p className='mt-4 max-w-xs leading-normal'>{t('description')}</p>
 
         <nav className='nav hidden lg:block'>
-          <ul className='mt-16 w-max'>
+          <ul className='flex flex-col gap-1 mt-16 w-max'>
             {keys.map((key, index) => (
-              <li
-                key={index}
-                className='text-xs font-bold uppercase tracking-widest text-zinc-500 hover:text-zinc-300 transition-all'
-              >
+              <li key={index} className='flex text-xs font-bold uppercase tracking-widest hover:pl-4 hover:text-white transition-all cursor-pointer'>
                 <Link href={locale + '/' + t(`options.${key}.href`)}>{t(`options.${key}.title`)}</Link>
               </li>
             ))}

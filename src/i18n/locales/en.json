@@ -2,7 +2,7 @@
   "Header": {
     "name": "Geisiel Melo",
     "dev": "Full Stack Developer",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima doloremque sequi ducimus!",
+    "description": "Building exceptional digital experiences is my specialty as a developer.",
 
     "options": {
       "about": {
@@ -23,10 +23,10 @@
   "About": {
     "title": "about",
     "paragraph": {
-      "p1": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima doloremque sequi ducimus!",
-      "p2": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima doloremque sequi ducimus!",
-      "p3": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima doloremque sequi ducimus!",
-      "p4": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima doloremque sequi ducimus!"
+      "p1": "I’m someone driven by challenges and committed to delivering the best results in the shortest time possible. For me, it’s not just about creating something functional; I strive to go further, combining attractive design, intuitive usability, and flawless performance — both in the interface and the code.",
+      "p2": "Currently, I work as a web developer at UniFTC, specializing in accessibility and performance. In recent months, I’ve been deeply involved in building websites, APIs, and integrations, ensuring that every project runs smoothly and provides users with a seamless and exceptional experience.",
+      "p3": "My journey began by developing solutions for self-employed professionals and small business owners. That period was transformative, allowing me to explore various technologies and understand the unique needs of each client, shaping the way I approach projects today.",
+      "p4": "In my free time, I enjoy recharging by playing games with friends or diving into great TV shows."
     }
   },
 
@@ -37,7 +37,7 @@
         "start": "2024",
         "end": "Today",
         "title": "Full Stack Developer · UniFTC",
-        "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, excepturi. Quas cupiditate, atque voluptas recusandae voluptates id corporis officia minus ullam corrupti at harum alias, sit autem iusto officiis temporibus.",
+        "description": "Development of websites with a focus on accessibility and performance. | Creation of robust and functional APIs. | Integration of systems to ensure efficient communication between different platforms. | Ensuring that all projects deliver a seamless and exceptional experience to users. | Problem-solving and process optimization to keep projects running smoothly.",
         "tags": "SQL, TypeScript, Next, Nest, TailwindCSS, PHP",
         "href": ""
       },
@@ -45,7 +45,7 @@
         "start": "2020",
         "end": "2024",
         "title": "Full Stack Developer · Freelancer",
-        "description": "Full-stack development of web applications using modern technologies such as MongoDB, Express, React, Node, and TypeScript. Development of APIs and interfaces with a focus on user experience enhancement. Implementation of robust programming practices, including version control with Git. Active participation in all stages of application development cycle, from planning to launch.",
+        "description": "Full-stack development of web applications using modern technologies such as MongoDB, Express, React, Node, and TypeScript. | Development of APIs and interfaces with a focus on user experience enhancement. | Implementation of robust programming practices, including version control with Git. | Active participation in all stages of application development cycle, from planning to launch.",
         "tags": "MongoDB, Express, React, TailwindCSS, TypeScript",
         "href": ""
       },
@@ -53,7 +53,7 @@
         "start": "2020",
         "end": "2022",
         "title": "Front-end Developer · Loja TrapStar",
-        "description": "Developed, maintained, and deployed production code for client websites, primarily utilizing HTML, CSS, and JavaScript. Collaborated  with the design team to promote a cohesive team environment and ensure consistent user experiences. Performed quality tests to ensure cross browser compatibility, speed and responsiveness.",
+        "description": "Developed, maintained, and deployed production code for client websites, primarily utilizing HTML, CSS, and JavaScript. | Collaborated  with the design team to promote a cohesive team environment and ensure consistent user experiences. | Performed quality tests to ensure cross browser compatibility, speed and responsiveness.",
         "tags": "HTML, CSS, JavaScript",
         "href": ""
       }

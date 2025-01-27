@@ -1,13 +1,13 @@
 import { ExternalLinkIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
 import { FC } from 'react'
 
-const getProjectHref = ({ href }: Repository): string | null => {
-  return href.live || href.github || null
+const getProjectHref = (repository: Repository): string | null => {
+  return repository.live || repository.repo || null
 }
 
-const getProjectTitle = ({ href }: Repository): string => {
-  if (href.live) return 'Live'
-  if (href.github) return 'GitHub'
+const getProjectTitle = (repository: Repository): string => {
+  if (repository.live) return 'Live'
+  if (repository.repo) return 'GitHub'
   return ''
 }
 

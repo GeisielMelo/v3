@@ -6,7 +6,7 @@ import { FC } from 'react'
 
 export const Archive: FC = () => {
   const data: Repository[] = archive.sort((a, b) => {
-    return new Date(b.created_at).getTime() - new Date(a.created_at).getTime()
+    return new Date(b.date).getTime() - new Date(a.date).getTime()
   })
 
   return (
@@ -29,16 +29,16 @@ export const Archive: FC = () => {
           </thead>
 
           <tbody>
-            {data.map((repo, index) => (
+            {data.map((repository, index) => (
               <tr className='border-b border-slate-300/10 last:border-none' key={index}>
-                <td className='py-4 pr-4 align-top text-sm'>{repo.created_at.substring(0, 4)}</td>
-                <td className='py-4 pr-4 align-top font-semibold leading-snug text-slate-200'>{repo.name}</td>
-                <td className='hidden py-4 pr-4 align-top text-sm lg:table-cell'>{repo.made_at}</td>
+                <td className='py-4 pr-4 align-top text-sm'>{repository.date.substring(0, 4)}</td>
+                <td className='py-4 pr-4 align-top font-semibold leading-snug text-slate-200'>{repository.name}</td>
+                <td className='hidden py-4 pr-4 align-top text-sm lg:table-cell'>{repository.made_at}</td>
                 <td className='hidden py-4 pr-4 align-top lg:table-cell'>
                   <ul>
-                    {repo.topics.map((topic, index) => (
-                      <li className='mb-3 mr-1 inline-block' key={index}>
-                        <div className='flex items-center rounded-full bg-zinc-400/10 px-3 py-1 text-xs font-medium leading-5 text-zinc-300 '>
+                    {repository.tags.map((topic, index) => (
+                      <li className='mb-3 mr-1 inline-block' key={index} title={topic}>
+                        <div className='flex items-center rounded-full bg-slate-900/95 px-3 py-1 text-xs font-medium leading-5 text-white/75'>
                           {topic}
                         </div>
                       </li>
@@ -46,7 +46,7 @@ export const Archive: FC = () => {
                   </ul>
                 </td>
                 <td className='hidden py-4 align-top sm:table-cell'>
-                  <CustomLink repository={repo} />
+                  <CustomLink repository={repository} />
                 </td>
               </tr>
             ))}
