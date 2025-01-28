@@ -34,7 +34,7 @@
     "cards": {
       "c1": {
         "start": "2024",
-        "end": "Today",
+        "end": "Hoje",
         "title": "Full Stack Developer · UniFTC",
         "description": "Desenvolvimento de websites com foco em acessibilidade e performance. | Criação de APIs robustas e funcionais. | Integração de sistemas para garantir comunicação eficiente entre diferentes plataformas. | Garantia de que todos os projetos entreguem uma experiência fluida e excepcional aos usuários. | Solução de problemas e otimização de processos para manter os projetos funcionando perfeitamente.",
         "tags": "SQL, TypeScript, Next, Nest, TailwindCSS, PHP",
@@ -65,7 +65,7 @@
       "c1": {
         "title": "Vacancies",
         "description": "Vacancies foi um projeto desenvolvido como um método aprimorado para organizar suas candidaturas de forma mais eficiente.",
-        "image": "/img/vacancies.png",
+        "image": "/img/vacancies.webp",
         "git": "https://github.com/GeisielMelo/vacancies",
         "live": "https://vacancies-client.vercel.app/",
         "tags": "Express, Mongodb, Node, React, Tailwind CSS"
@@ -73,7 +73,7 @@
       "c2": {
         "title": "TMDb",
         "description": "Um aplicativo criado no meu tempo livre com o objetivo de ser uma aplicação exclusivamente front-end alimentada por dados do TheMovieDB.",
-        "image": "/img/tmdb.png",
+        "image": "/img/tmdb.webp",
         "git": "https://github.com/GeisielMelo/TMDb",
         "live": "https://tmdb.geisielmelo.vercel.app/",
         "tags": "Firebase, Lucide, React, Swiper, Tailwind CSS"
@@ -81,7 +81,7 @@
       "c3": {
         "title": "Profile Visualizer",
         "description": "Uma forma mais eficaz de visualizar informações dos usuários por meio de gráficos e estatísticas.",
-        "image": "/img/profilevizualizer.png",
+        "image": "/img/profilevizualizer.webp",
         "git": "https://github.com/GeisielMelo/Profile-visualizer",
         "live": "https://profile-visualizer.vercel.app/",
         "tags": "Node, React, Styled Components, Typescript"
@@ -89,7 +89,7 @@
       "c4": {
         "title": "GNM-Chat",
         "description": "Uma plataforma de chat completa onde você pode adicionar contatos e enviar mensagens em tempo real, muito simples de usar e totalmente responsiva.",
-        "image": "/img/gnmchat.png",
+        "image": "/img/gnmchat.webp",
         "git": "https://github.com/GeisielMelo/GNM-Chat",
         "live": "https://gnm-chat.vercel.app/",
         "tags": "Firebase, Lucide, React, Tailwind CSS"
