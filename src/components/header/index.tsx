@@ -26,7 +26,7 @@ export const Header: FC<{ locale: string }> = ({ locale }) => {
             {keys.map((key, index) => (
               <li
                 key={index}
-                className='flex text-xs font-bold uppercase tracking-widest hover:pl-4 hover:text-white transition-all cursor-pointer'
+                className='flex text-sm font-bold uppercase tracking-widest hover:pl-4 hover:text-white transition-all cursor-pointer'
               >
                 <Link href={locale + '/' + t(`options.${key}.href`)}>{t(`options.${key}.title`)}</Link>
               </li>
@@ -40,6 +40,7 @@ export const Header: FC<{ locale: string }> = ({ locale }) => {
           href='https://github.com/GeisielMelo'
           className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1 rounded-sm'
           target='_blank'
+          title='GitHub'
         >
           <GitHubIcon fontSize='small' />
         </a>
@@ -48,6 +49,7 @@ export const Header: FC<{ locale: string }> = ({ locale }) => {
           href='https://www.linkedin.com/in/geisiel'
           className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1 rounded-sm'
           target='_blank'
+          title='LinkedIn'
         >
           <LinkedInIcon fontSize='small' />
         </a>
@@ -56,6 +58,7 @@ export const Header: FC<{ locale: string }> = ({ locale }) => {
           href='mailto:geisiel.nascimento@gmail.com'
           className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1 rounded-sm'
           target='_blank'
+          title='Email'
         >
           <EmailIcon fontSize='small' />
         </a>
@@ -63,6 +66,7 @@ export const Header: FC<{ locale: string }> = ({ locale }) => {
         <Link
           href={locale + '/archive'}
           className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1 rounded-sm'
+          title='Archive'
         >
           <FolderZipIcon fontSize='small' />
         </Link>
