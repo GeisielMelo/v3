@@ -6,7 +6,7 @@ export const DropdownLanguage: FC = () => {
   return (
     <DropdownMenu>
       <DropdownMenuTrigger asChild>
-        <span className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1 rounded-sm'>
+        <span className='shrink-0 text-xs bg-slate-800/50 hover:text-white transition-all p-1 rounded-sm' title='Languages'>
           <TranslateIcon fontSize='small' />
         </span>
       </DropdownMenuTrigger>
