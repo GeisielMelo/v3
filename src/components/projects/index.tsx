@@ -23,8 +23,12 @@ export const Projects: FC = () => {
 
               <img
                 src={t(`cards.${key}.image`)}
-                alt='placeholder image'
+                loading='lazy'
+                alt={key}
+                title={t(`cards.${key}.title`)}
                 className='aspect-video object-cover rounded border-2 border-slate-200/10 transition group-hover:border-slate-200/30 sm:order-1 sm:col-span-2 sm:translate-y-1'
+                width={1600}
+                height={900}
               />
             </div>
           </div>
