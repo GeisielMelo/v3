@@ -1,8 +1,3 @@
-interface DataLayerEvent {
-  event: string
-  [key: string]: string | number | boolean | undefined
-}
-
 interface Window {
   dataLayer: {
     push: (event: DataLayerEvent) => void
