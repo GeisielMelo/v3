@@ -1,3 +1,5 @@
+'use client'
+
 import { ExternalLinkIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
 import { pushToDataLayer } from '@/lib/gtml'
 import { FC } from 'react'
