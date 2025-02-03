@@ -1,4 +1,5 @@
 import { ExternalLinkIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
+import { pushToDataLayer } from '@/lib/gtml'
 import { FC } from 'react'
 
 const getProjectHref = (repository: Repository): string | null => {
@@ -18,7 +19,22 @@ export const CustomLink: FC<{ repository: Repository }> = ({ repository }) => {
   if (!href) return null
 
   return (
-    <a href={href} target='_blank' rel='noopener noreferrer' title={title}>
+    <a
+      href={href}
+      target='_blank'
+      rel='noopener noreferrer'
+      title={title}
+      onClick={() =>
+        pushToDataLayer({
+          event: 'archive_click',
+          action: 'click',
+          type: 'link',
+          title: repository.name,
+          category: 'archive',
+          href,
+        })
+      }
+    >
       {title === 'Live' ? <ExternalLinkIcon height={16} width={16} /> : <GitHubLogoIcon height={16} width={16} />}
     </a>
   )

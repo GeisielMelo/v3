@@ -1,5 +1,6 @@
 import '@/styles/global.css'
 
+import { GoogleTagManager } from '@next/third-parties/google'
 import { getLocale, getMessages } from 'next-intl/server'
 import { NextIntlClientProvider } from 'next-intl'
 
@@ -60,6 +61,7 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   return (
     <html lang={locale}>
+      <GoogleTagManager gtmId='GTM-5W62N986' />
       <body className='bg-custom-one text-slate-400'>
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
