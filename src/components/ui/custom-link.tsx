@@ -1,7 +1,7 @@
 'use client'
 
 import { ExternalLinkIcon, GitHubLogoIcon } from '@radix-ui/react-icons'
-import { pushToDataLayer } from '@/lib/gtml'
+import { sendGTMEvent } from '@next/third-parties/google'
 import { FC } from 'react'
 
 const getProjectHref = (repository: Repository): string | null => {
@@ -27,7 +27,7 @@ export const CustomLink: FC<{ repository: Repository }> = ({ repository }) => {
       rel='noopener noreferrer'
       title={title}
       onClick={() =>
-        pushToDataLayer({
+        sendGTMEvent({
           event: 'archive_click',
           action: 'click',
           type: 'link',

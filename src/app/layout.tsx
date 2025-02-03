@@ -61,8 +61,8 @@ export default async function RootLayout({ children }: { children: React.ReactNo
 
   return (
     <html lang={locale}>
-      <GoogleTagManager gtmId='GTM-5W62N986' />
       <body className='bg-custom-one text-slate-400'>
+        <GoogleTagManager gtmId='GTM-5W62N986' />
         <NextIntlClientProvider messages={messages}>{children}</NextIntlClientProvider>
       </body>
     </html>
