@@ -1,18 +1,13 @@
 <div align="center">
-  <img alt="Logo" src="https://github.com/GeisielMelo/v3/blob/main/public/img/logo.png" width="50" />
+  <img alt="Logo" src="https://github.com/GeisielMelo/v3/blob/main/src/app/favicon.ico" width="50" />
 </div>
 <h1 align="center">
   geisiel.com - v3
 </h1>
 <p align="center">
-  The third veresion of <a href="https://geisiel.com" target="_blank">geisiel.com</a> built with <a href="https://react.dev" target="_blank">Next</a> and hosted with <a href="https://vercel.com" target="_blank">Vercel</a>
-</p>
-<p align="center">
-  Previous iterations:
-  <a href="https://v2.geisiel.com/" target="_blank">v2</a>
+  The third veresion of <a href="https://geisiel.com" target="_blank">geisiel.com</a> built with <a href="https://nextjs.org" target="_blank">Next</a>.
 </p>
 
-![demo](https://raw.githubusercontent.com/GeisielMelo/v3/main/public/img/demo.png)
 
 ## 🚨 Forking this repo
 
